@@ -1,0 +1,180 @@
+@import '../../styl/component-include.styl'
+
+.b-side
+  position relative
+  z-index 107
+  
+  &-icons
+    position fixed
+    top 0
+    left 0
+    width 127px
+    z-index 109
+    
+    @media ( max-width $breakpoint-mobile )
+      width 100%
+      background-color #333
+    
+    .b-favorites-link
+      margin-left 45px
+      
+      @media ( max-width $breakpoint-mobile )
+        display none
+
+  &-bar
+    position fixed
+    top 0
+    left 0
+    width 554px
+    height 100%
+    background-color #333
+    transform( translate(-427px, 0))
+    transition( all 0.5s ease )
+    z-index 108
+    
+    &__content
+      padding 0 80px 0 127px
+      opacity(0)
+      transition( all 0.5s ease )
+      
+      @media ( max-width $breakpoint-mobile )
+        padding 50px 20px 20px 20px
+    
+    &.i-open
+      transform( translate(0, 0))
+    
+      .b-side-bar__content
+        opacity(1)
+    
+    &__button
+      display block
+      width 69px
+      height 69px
+      background embedurl( 'img/icon.gif' ) no-repeat center center
+      margin 18px 0 20px 29px
+    
+      @media ( max-width $breakpoint-mobile )
+        width 48px
+        height 45px
+        margin 0 auto
+        background-size 50%
+      
+    
+    
+    &__top
+      display block
+      text-transform uppercase
+      color #fff
+      font-size 6pt
+      position fixed
+      bottom -60px
+      left 0
+      width 127px
+      height 46px
+      text-align center
+      cursor pointer
+      transition( bottom 0.5s ease )
+      
+      &:before
+        content " "
+        display block
+        width 0
+        height 0
+        border-style solid
+        border-width 0 28.5px 29px 28.5px
+        border-color transparent transparent #484848 transparent
+        margin 0 auto 3px
+      
+      
+      &.i-show
+        bottom 20px
+      
+      
+      @media( max-width $breakpoint-mobile )
+        display none
+      
+      
+      .i-ipad &
+        display none
+      
+    
+    
+    @media ( max-width $breakpoint-mobile )
+      width 100%
+      height 100%
+      transform( translate(0, -100%))
+      
+      &.i-open
+        transform( translate(0, 0))
+      
+    
+    
+    menu
+      list-style-type none
+      margin 31px 0 196px
+      padding 0
+      font-size 18pt
+      
+      menu
+        font-size 13.5pt
+        margin 15px 0 33px 30px
+        
+        @media ( max-width $breakpoint-mobile )
+          font-size 10.5pt
+        
+      span
+        margin-left 20px
+      
+      @media ( max-width $breakpoint-mobile )
+        margin-bottom 0
+    
+    li
+      margin-bottom 7px
+      
+      li
+        margin-bottom 17px
+    
+    .b-panel
+      
+      /*&-phone
+        margin 25px 0 54px
+        font-size 13.5pt
+        
+        @media ( max-width $breakpoint-mobile )
+          margin 0
+      
+      &-info
+        color #ccc
+        line-height 2
+        font-size 13.5pt
+        position relative
+        
+        @media ( max-width $breakpoint-mobile )
+          display none
+        
+        
+        &__icon
+          position absolute
+          top -45px
+          left -80px
+          display inline-block
+          width 12px
+          height 36px
+          background embedurl( 'img/info.png' ) no-repeat 0 0*/
+
+  &-panel
+    background-color #333
+    text-shadow none
+    color #fff
+    
+    &__button
+      display block
+      width 29px
+      height 29px
+      background url("data:image/gifbase64,R0lGODlhHQAXAIABAOzs7P///yH5BAEAAAEALAAAAAAdABcAAAIkhI+py+0PW5i02ouz3rz7D4biSHrRiaYqVLbuC8fyDK72jTcFADs=") no-repeat 0 0
+      position absolute
+      top 38px
+      left 49px
+      
+      @media ( max-width $breakpoint-mobile )
+        display none

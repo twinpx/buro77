@@ -1,0 +1,112 @@
+//change autocomplete color in Chrome
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #252525 inset;
+    -webkit-text-fill-color: #bbb !important;
+}
+
+.ui-field-contain:before,
+.ui-field-contain:after
+  content ""
+  display table
+  
+.ui-field-contain:after
+  clear both
+
+.ui-field-contain input,
+.ui-field-contain textarea
+  min-height 50px
+  padding 12px 20px
+  line-height 24px
+  background-color #252525
+  color #fff
+  border-radius(0)
+  font-size 13.5pt
+  font-weight 100
+  font-family $font
+  box-sizing( border-box )
+  border none
+  outline none
+
+.ui-field-contain input
+  border-radius(0)
+  border 1px solid #252525
+  boder-color #252525
+  margin 0
+  transition-all()
+  width 100%
+
+
+.ui-field-contain
+  margin 0 0 23px 0
+  padding 0
+  
+  @media ( max-width 520px)
+    margin-bottom 10px
+  
+
+
+textarea
+  height 100px !important
+  transition-all()
+  width 100%
+  box-sizing( border-box )
+
+.i-has-error
+  
+  input,
+  textarea
+    border-color #ff6666
+  
+
+
+button
+  background-color #669966
+  color #fff
+  border-width 0
+  margin 0
+  padding 0
+  font-size 13.5pt
+  line-height 50px
+  box-shadow( none )
+  transition-all()
+  box-sizing( border-box )
+  width 100%
+  outline none
+  
+  &.i-theme
+    &-a
+      background-color #669966
+      
+      &:hover
+        background-color #7db17d
+      
+      
+      &:active
+        background-color #75c075
+      
+    
+    
+    &-b
+      background-color #8877aa
+    
+  
+  
+  &.i-disabled
+    background-color #414141 !important
+    color #5a5a5a !important
+    cursor default
+  
+  
+  &.i-error
+    background-color #604141 !important
+    color #745353 !important
+    cursor default
+  
+
+
+.b-form-message
+  background embedurl("img/sent-icon.png") no-repeat 0 center
+  min-height 50px
+  padding 10px 0 10px 90px
+  font-size 17pt
+  line-height 1.3

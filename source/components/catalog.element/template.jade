@@ -1,0 +1,96 @@
+﻿// start /components/catalog.element/
+
+link( rel="stylesheet", href="/components/catalog.element/style.css" )
+script( src="/components/catalog.element/script.js" )
+
+.b-estate
+  h1 Двухуровневая квартира общ. пл. 1040 кв.м., свободная планировка
+  
+  .b-estate__bar
+  
+    include ../../components/favorite/template
+    
+    a.b-address-link( href="#" target="_blank" )
+      span.b-address-link__text Россия, Москва, Молочный переулок, дом 3
+
+  .b-row.b-estate__props
+    .b-col-xs-2
+      h5 Лот
+      |560746
+    
+    .b-col-xs-2
+      h5 Площадь
+      |72-213 м
+      sup 2
+    
+    .b-col-xs-2
+      h5 Этаж
+      |3
+      
+    .b-col-xs-2
+      h5 Комнат
+      |3
+      
+    .b-col-xs-2
+      h5 Цена
+      |Договор
+  
+  hr
+  
+  include ../../components/catalog.gallery/template
+  
+  hr
+
+  button#toContactForm.i-theme-b Оставить заявку
+  
+  hr
+  
+  .description
+    p В небольшой клубном доме напротив Зачатьевского монастыря в продажу предлагается просторная двухуровневая квартира на 2-м и 3-м этажах общей площадью 1040 кв.м.
+    p Из окон открываются чудесные виды на Храм и тихие переулки Остоженки. 
+    |Квартиру можно разделить как по вертикали, так и по горизонтали. 
+    |Минимальная площадь покупки - 260 кв.м. Есть возможность покупки как полностью 2 и 3 этажа, так и отдельно. Площади, соответственно по 520 м (этаж).
+    |Также, есть возможность приобрести машиноместа в подземном паркинге.
+  
+  hr
+
+  table.b-data-table
+    colgroup
+      col.name
+      col.value
+    thead
+      tr
+        th Параметр
+        th Значение
+    tbody
+      tr
+        th Район
+        td Остоженка
+      tr
+        th Метро
+        td Кропоткинская, Парк Культуры
+  
+  hr
+  
+  .b-estate__plan
+    h2 Планировка
+    figure
+      img( src="/upload/estates/plan.gif" )
+  
+  hr
+
+  .b-estate__map
+    h2 Схема проезда
+    .i-border
+      script( type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=Wa3Q9dYruHRftSb8fWLAeirmyIIPq9wD&amp;width=100%&amp;height=450" )
+  
+  hr
+
+  a.b-download-panel( href="presentation.pdf" )
+    span.b-pdf-file
+      span.b-pdf-file__name
+        |Презентация объекта
+        br
+        span.small PDF 32 Мб
+
+// end /components/catalog.element/

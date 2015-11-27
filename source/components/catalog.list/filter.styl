@@ -1,0 +1,185 @@
+.b-estate-filter
+  text-transform uppercase
+  background-color #000
+    
+  menu
+    padding 0
+    margin 0
+    list-style none
+    
+  li
+    display inline-block
+
+  &__menu1
+    background-color #1b1b1b
+    padding 16px 0 12px
+    text-align center
+    font-size 8pt
+    
+    li
+      width 19.5%
+      text-align center
+      
+      @media( max-width $breakpoint-mobile )
+        width 33%
+    
+    a
+      color $light-grey
+      padding 15px 0 13px
+      ib()
+      width 100%
+      
+      &.i-active
+        color #fff
+        font-weight bold
+        cursor default
+        
+      &.i-spec
+        color #c999fc
+        padding-left 20px
+        background embedurl( '/img/spec.png' ) no-repeat 0 center
+        width auto
+        
+      span
+        color $grey
+        margin-left 4px
+
+  &__menu2
+    background-color #151515
+    padding 12px 0 7px
+    text-align center
+    font-size 9pt
+    display none
+    
+    .i-menu2 &
+      //display block
+    
+    li
+      width 30%
+      text-align center
+      margin 0 7px 5px
+      
+    a
+      border 1px solid $dark-grey
+      padding 15px 0 13px
+      ib()
+      width 100%
+      color $lightest-grey
+      
+      &:hover,
+      &.i-active
+        border-color #4aa477
+        color #fff
+        
+      &.i-active
+        font-weight bold
+        cursor default
+
+  &__menu3
+    background-color #0e0e0e
+    padding 12px 0 7px
+    text-align center
+    font-size 9pt
+    display none
+    
+    .i-menu3 &
+      //display block
+    
+    li
+      width 20%
+      text-align center
+      margin 0 7px 5px
+      
+      @media( max-width $breakpoint-mobile )
+        width 33%
+      
+    a
+      border 1px solid $dark-grey
+      padding 15px 0 13px
+      ib()
+      width 100%
+      color $lightest-grey
+      
+      &:hover,
+      &.i-active
+        border-color #4aa477
+        color #fff
+        
+      &.i-active
+        font-weight bold
+        cursor default
+  
+  &__number
+    color #fff
+    padding 13px 0 24px
+    text-align center
+    font-weight bold
+    display none
+    
+    .i-menu2 &,
+    .i-menu3 &
+      //display block
+      
+    .i-preloader &
+      //display none
+    
+    button
+      font-weight bold
+      font-size 9pt
+      color #fff
+      text-transform uppercase
+      text-align center
+      width 30%
+      
+    .i-preloader &
+      background url( "/template/images/preloader-17.gif" ) no-repeat center center
+    
+      .b-estate-filter__num,
+      .b-estate-filter__text
+        visibility hidden
+        
+      .b-estate-filter__button
+        height 50px
+
+      button
+        display none
+  
+  &__num
+    font-size 18pt
+    line-height 32px
+    
+  &__text
+    font-size 7pt
+    margin-bottom 17px
+    
+  /*&__button
+    padding 0 0 24px
+    text-align center
+    display none
+    
+    .i-menu2 &,
+    .i-menu3 &
+      //display block
+      
+    .i-preloader &
+      //display none
+    
+    button
+      font-weight bold
+      font-size 9pt
+      color #fff
+      text-transform uppercase
+      text-align center
+      width 30%*/
+      
+  &__preloader
+    background-color #171717
+    text-align center
+    padding 15px 0
+    display none
+    
+    .i-preloader &
+      //display block
+    
+    img
+      vertical-align top

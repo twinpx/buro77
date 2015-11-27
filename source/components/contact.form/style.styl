@@ -1,0 +1,72 @@
+@import '../../styl/component-include.styl'
+
+.b-contact-form
+  margin 0 0 60px 50px
+  max-width 700px
+  width 100%
+  position relative
+  
+  @media ( max-width 800px)
+    margin-left 0
+    padding 0 20px 0 50px
+    width 100%
+    box-sizing( border-box )
+    
+    .ui-block-a,
+    .ui-block-b
+      float none
+      width 100%
+    
+    
+    h2
+      font-size 12pt
+    
+  
+  
+  @media ( max-width 520px)
+    margin-left 0
+    padding 0 20px
+  
+  
+  .ui-block
+  
+    &-a .ui-field-contain
+      margin-right 23px
+      
+      @media ( max-width 800px)
+        margin-right 0
+      
+    
+    
+    &-b .ui-field-contain
+      margin-left 23px
+      
+      @media ( max-width 800px)
+        margin-left 0
+      
+    
+  
+  
+  &__content
+    transition-all()
+    opacity(1)
+  
+  
+  .b-form-message
+    transition-all()
+    transform( scale(0))
+    opacity(0)
+    position absolute
+    top 50%
+    left 0
+    margin-top -20px
+  
+  
+  &.i-success &__content
+    transform( scale(0))
+    opacity(0)
+  
+  
+  &.i-success .b-form-message
+    transform( scale(1))
+    opacity(1)

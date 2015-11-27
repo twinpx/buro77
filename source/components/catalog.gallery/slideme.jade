@@ -1,0 +1,16 @@
+// start /components/catalog.gallery/
+
+link( rel="stylesheet", href="/components/catalog.gallery/slideme.css" )
+link( rel="stylesheet", href="/components/catalog.gallery/style.css" )
+script( src="/components/catalog.gallery/slideme2.js" )
+script( src="/components/catalog.gallery/script.js" )
+
+#gallery
+  ul.slideme
+    - var n = 0
+    while n < 9
+      - n++
+      li
+        img( src="/upload/gallery/#{n}.jpg" )
+
+// end /components/catalog.gallery/

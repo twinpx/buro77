@@ -1,0 +1,26 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title Contacts | Buro77
+
+block content
+
+  .b-content
+
+    h1 Контакты Buro 77
+    p Если у вас есть интересное предложение вы можете связаться с нами.
+    p
+      b Телефон:
+      |&nbsp;8 495 215 16 55
+      br
+      b Email:
+      |&nbsp;
+      a( href="mailto:info@buro77.ru" ) info@buro77.ru
+      br
+      b Адрес:
+      |109044, Москва, 1-й Крутицкий переулок., д. 3, стр. 1, офис 1.
+    
+    h2 Схема проезда
+    
+    #estateMap.i-border( style="height: 450px;" )
+      script( type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=Wa3Q9dYruHRftSb8fWLAeirmyIIPq9wD&width=100%&height=450" )

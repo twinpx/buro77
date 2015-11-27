@@ -1,0 +1,33 @@
+﻿// start /components/contact.form/
+
+link( rel="stylesheet", href="/components/contact.form/style.css" )
+script( src="/components/contact.form/script.js" )
+
+#contactForm.b-contact-form
+
+  .b-contact-form__content
+    h2 Не нашли подходящее предложение?
+      br
+      |Напишите нам, мы подберем для вас вариант
+    
+    form( action="/components/contact.form/send.json" method="get" )
+      .ui-field-contain
+        input( type="text" name="name" value="" placeholder="Представьтесь" required )
+      
+      .b-row
+        .b-col-sm-6
+          .ui-field-contain
+            input( type="email" name="email" value="" placeholder="Email" required )
+        .b-col-sm-6
+          .ui-field-contain
+            input( type="tel" name="tel" value="" placeholder="Телефон" required )
+      
+      .ui-field-contain
+        textarea( name="details" cols="40" rows="8" placeholder="Расскажите о деталях" required )
+      
+      .ui-field-contain
+        button.i-theme-a( type="submit" ) Отправить
+  
+  .b-form-message Ваша заявка отправлена. В ближайшее время с Вами свяжется наш представитель.
+        
+// end /components/contact.form/

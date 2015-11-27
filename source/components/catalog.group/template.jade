@@ -1,0 +1,156 @@
+﻿// start /components/catalog.group/
+
+link( rel="stylesheet", href="/components/catalog.group/style.css" )
+script( src="/components/catalog.group/script.js" )
+
+.b-estate
+  h1 Двухуровневая квартира общ. пл. 1040 кв.м., свободная планировка
+  
+  .b-estate__bar
+  
+    include ../../components/favorite/template
+    
+    a.b-address-link( href="#" target="_blank" )
+      span.b-address-link__text Россия, Москва, Молочный переулок, дом 3
+  
+  hr
+  
+  include ../../components/catalog.gallery/template
+  
+  hr
+
+  button#toContactForm.i-theme-b Оставить заявку
+  
+  hr
+  
+  .description
+    p В небольшой клубном доме напротив Зачатьевского монастыря в продажу предлагается просторная двухуровневая квартира на 2-м и 3-м этажах общей площадью 1040 кв.м.
+    p Из окон открываются чудесные виды на Храм и тихие переулки Остоженки. 
+    |Квартиру можно разделить как по вертикали, так и по горизонтали. 
+    |Минимальная площадь покупки - 260 кв.м. Есть возможность покупки как полностью 2 и 3 этажа, так и отдельно. Площади, соответственно по 520 м (этаж).
+    |Также, есть возможность приобрести машиноместа в подземном паркинге.
+  
+  hr
+
+  table.b-data-table
+    colgroup
+      col.name
+      col.value
+    thead
+      tr
+        th Параметр
+        th Значение
+    tbody
+      tr
+        th Район
+        td Остоженка
+      tr
+        th Метро
+        td Кропоткинская, Парк Культуры\
+  
+  hr
+
+  .b-estate__map
+    h2 Схема проезда
+    .i-border
+      script( type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=Wa3Q9dYruHRftSb8fWLAeirmyIIPq9wD&amp;width=100%&amp;height=450" )
+  
+  hr
+  
+  table.b-table
+    thead
+      tr
+        th
+        th Лот
+        th Этаж
+        th Площадь
+        th Цена
+    tbody
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234452 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 195
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+  
+  hr
+
+  a.b-download-panel( href="presentation.pdf" )
+    span.b-pdf-file
+      span.b-pdf-file__name
+        |Презентация объекта
+        br
+        span.small PDF 32 Мб
+
+// end /components/catalog.group/

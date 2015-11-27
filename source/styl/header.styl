@@ -1,0 +1,70 @@
+.b-header
+  background-color $header-bg
+  color #333
+  border none
+  padding 10px 50px 10px 159px
+  box-sizing( border-box )
+  min-height 75px
+  
+  a
+    
+    &,
+    &:hover,
+    &:active
+      color #333
+  
+  @media ( max-width $breakpoint-mobile)
+    margin-top 45px
+    padding 35px 20px
+    min-height 0
+    text-align center
+  
+
+
+.b-logo
+  
+  &__title
+    ib()
+    font-size 18pt
+    text-transform uppercase
+    margin-right 42px
+    line-height 55px
+  
+    img
+      ib()
+      margin 2px 0 5px
+    
+    @media ( max-width $breakpoint-tablet )
+      line-height normal
+      margin-top -9px
+    
+    @media ( max-width $breakpoint-mobile )
+      margin -9px 0 10px
+    
+  &__slogan
+    ib()
+    font-size 10.5pt
+    line-height 55px
+    
+    @media ( max-width $breakpoint-tablet )
+      line-height normal
+      display block
+      margin-top 8px
+    
+    @media ( max-width $breakpoint-mobile )
+      display none
+    
+.b-phone
+  float right
+  line-height 55px
+  text-align right
+  font-size 13.5pt
+  font-weight 700
+  color #333 !important
+  padding-left 39px
+  background embedurl( 'img/phone-header.png' ) no-repeat 0 center
+  
+    
+  @media ( max-width $breakpoint-mobile )
+    display none
+  

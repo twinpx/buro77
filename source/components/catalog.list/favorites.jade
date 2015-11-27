@@ -1,0 +1,52 @@
+﻿// start /components/catalog.list/
+
+link( rel="stylesheet", href="/components/catalog.list/style.css" )
+script( src="/components/catalog.list/script.js" )
+
+.b-estate-list.i-empty
+  .b-estate-list__empty
+    .b-estate-list__empty__cont
+      - var n = 4
+      while n > 0
+        - n--
+        .b-estate-list__empty__i
+          a.b-empty-link( href="" )
+            span.b-empty-link__cont
+              span Добавьте
+                br
+                |что-то в
+                br
+                |избранное
+                
+.b-estate-list
+  a.b-estate-list__i( href="/estate/" data-img-bw-src="/upload/estates/2-bw.jpg" data-img-src="/upload/estates/2.jpg" )
+    img.b-estate-list__i__img-bw( src="/template/images/tr.gif" )
+    img.b-estate-list__i__img( src="/template/images/tr.gif" )
+    span.b-estate-list__i__shutter
+    span.b-estate-list__i__title Сосновая аллея
+    span.b-estate-list__i__props
+      |Лот: 1973
+      br
+      span Площадь: 
+      |72—213 м?
+      br
+      span Район: 
+      |Тверская
+      span.b-estate-list__i__price 120 000 000 руб.
+      
+  .b-estate-list__empty
+    .b-estate-list__empty__cont
+      - var n = 4
+      while n > 0
+        - n--
+        .b-estate-list__empty__i
+          a.b-empty-link( href="" )
+            span.b-empty-link__cont
+              span Добавьте
+                br
+                |что-то в
+                br
+                |избранное
+
+        
+// end /components/catalog.list/

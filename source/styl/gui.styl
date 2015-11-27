@@ -1,0 +1,273 @@
+﻿body
+  background embedurl("img/side-panel-bg.gif") repeat-y 0 0 #383838
+  color #ccc
+  font-family $font
+  line-height $line-height-lg
+  font-weight 100
+  font-size $font-size-bs
+  
+  @media (min-width: 540px)
+    background-image none
+    
+a
+  color #fff
+  text-decoration none
+  
+  &:hover,
+  &:active,
+  &:focus
+    color #33ccff
+  
+b
+  font-weight 700
+
+p
+  margin 30px 0
+
+h1, h2, h3, h4, h5, h6
+  font-family $font
+  font-weight 100
+
+h1
+  font-size 36pt
+  line-height $line-height-sm
+  margin 0 0 50px
+  
+  @media( max-width $breakpoint-mobile )
+    font-size 18pt
+  
+h2
+  font-size 18pt
+  line-height $line-height-sm
+  margin 40px 0 20px
+  
+  &:first-child
+    margin-top 0
+  
+h5
+  font-size $font-size-sm
+  color #666666
+
+hr
+  margin 20px 0
+  padding 0
+  border 0
+  height 1px
+
+ul, ol
+  margin 20px 0 20px 27px
+  padding-left 23px
+
+ul
+  padding-left 0
+  
+  li
+    list-style-type none
+    background embedurl("img/dash.png") no-repeat 0 16px
+    padding-left 23px
+  
+.b-content
+  padding 20px 55px 55px
+  background-color $content-bg
+  color $text-color
+  
+  @media( max-width $breakpoint-mobile )
+    padding 20px
+    
+  a
+    &,
+    &:hover,
+    &:active,
+    &:focus
+      color $link-color
+      
+.small
+  font-size $font-size-xs
+
+.i-border
+  border 5px solid $border-color
+
+.b-grid-e
+  position relative
+  
+  .b-block-a
+    
+    @media( min-width $breakpoint-desktop )
+      width 220px
+      min-height 1px
+      float left
+        
+  .b-block-b
+    
+    @media( min-width $breakpoint-desktop )
+      min-height 1px
+      padding-left 220px
+        
+  &:after
+    clear both
+    content "."
+    display block
+    height 0
+    visibility hidden
+  
+.b-data-table
+  width 100%
+  border-collapse collapse
+  
+  .name,
+  .value
+    width 50%
+    
+  th
+    font-style normal
+    text-align left
+    font-weight normal
+    
+  thead th
+    font-weight 700
+    
+  th,
+  td
+    padding 10px
+    font-size $font-size-sm
+    border-bottom 1px solid $border-color
+    border-collapse collapse
+
+  @media( max-width $breakpoint-tablet )
+    
+    thead
+      display none
+      
+    td,
+    th
+      display block
+        
+    th
+      border none
+      padding-bottom 5px
+        
+    td
+      padding-top 5px
+      font-size $font-size-bs
+      
+.b-dl-table
+  max-width 520px
+  
+  dt
+    padding 10px 10px 5px
+    font-size $font-size-sm
+    
+  dd
+    margin 0
+    border-bottom 1px solid $border-color
+    padding 0 10px 10px
+    line-height $line-height-sm
+    
+  .th
+    display none
+    font-weight 700
+    
+  @media( min-width $breakpoint-tablet )
+  
+    .th
+      display block
+        
+    dt
+      float left
+      width 45%
+      border-bottom 1px solid $border-color
+      padding 10px
+      margin 0
+      box-sizing( border-box )
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
+        
+    dd
+      width 55%
+      padding 10px
+      margin-left 45%
+      box-sizing( border-box )
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
+      font-size $font-size-sm
+      line-height $line-height-lg
+      
+.b-download-panel
+  border 1px solid $border-color
+  padding 28px
+  display block
+  
+  @media( max-width $breakpoint-mobile )
+    padding 18px
+  
+.b-pdf-file
+  display inline-block
+  vertical-align top
+  background embedurl("img/pdf-icon.gif") no-repeat 0 center
+  padding-left 56px
+  line-height 38px
+  
+  &__name
+    display inline-block
+    vertical-align top
+    line-height $line-height-sm
+    
+
+.b-address-link
+  display inline-block
+  vertical-align top
+  padding-left 50px
+  background embedurl("img/address-icon.png") no-repeat 0 center
+  line-height 30px
+  font-size $font-size-sm
+  
+  &__text
+    display inline-block
+    vertical-align middle
+    line-height $line-height-sm
+  
+.b-favorites-link
+  display block
+  width 37px
+  height 35px
+  background embedurl("img/favorite-link.png") no-repeat 0 0
+  position relative
+  
+  &__num
+    position absolute
+    top -13px
+    right -28px
+    display block
+    line-height 25px
+    width 25px
+    text-align center
+    color #fff
+    font-size 9pt
+    background-color #8877aa
+    border-radius 10px
+    -webkit-border-radius 10px
+    
+.b-table
+  width 100%
+  font-size $font-size-sm
+  
+  tbody tr
+    cursor pointer
+    
+    &:hover
+      background-color lightness( $header-bg, 90%)
+  
+  thead th
+    border-bottom 1px solid $border-color
+    text-align left
+    
+  tbody td
+    padding 10px 10px 10px 0
+    border-bottom 1px solid $border-color
+    text-align left
+    
+  img
+    vertical-align top
+

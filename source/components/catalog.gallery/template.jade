@@ -1,0 +1,25 @@
+// start /components/catalog.gallery/
+
+//-link( rel="stylesheet", href="/components/catalog.gallery/slideme.css" )
+link( href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css" rel="stylesheet" )
+link( rel="stylesheet", href="/components/catalog.gallery/style.css" )
+//-script( src="/components/catalog.gallery/slideme2.js" )
+//-script( src="/components/catalog.gallery/script.js" )
+script( src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js" )
+
+//-#gallery
+  ul.slideme
+    - var n = 0
+    while n < 9
+      - n++
+      li
+        img( src="/upload/gallery/#{n}.jpg" )
+        
+        
+.fotorama( data-width="100%" data-ratio="3/2" data-loop="true" data-nav="thumbs" )
+  - var n = 0
+  while n < 9
+    - n++
+    img( src="/upload/gallery/#{n}.jpg" )
+
+// end /components/catalog.gallery/
