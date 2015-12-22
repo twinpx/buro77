@@ -1,4 +1,4 @@
-( function($) {
+﻿( function($) {
 
   'use strict';
   
@@ -7,6 +7,7 @@
     //filter
     var $filter = $( '#estateFilter' );
     
+    //button
     $filter.delegate( '.b-estate-filter__button button', 'click', function() {
       $.ajax({
         url: '/components/catalog.list/send.json',
@@ -57,7 +58,11 @@
               //$filter.addClass( 'i-menu2' );
               $( '.b-estate-filter__menu2' ).html( data.html );
               $( '.b-estate-filter__menu2' ).slideDown();
-              $( '.b-estate-filter__number' ).slideDown();
+              if ( data.num ) {
+                $( '.b-estate-filter__num' ).text( data.num );
+                $( '.b-estate-filter__text' ).text( data.text );
+                $( '.b-estate-filter__number' ).slideDown();
+              }
             }
           },
           error: ajaxError
@@ -90,6 +95,10 @@
               //$filter.addClass( 'i-menu3' );
               $( '.b-estate-filter__menu3' ).html( data.html );
               $( '.b-estate-filter__menu3' ).slideDown();
+              if ( data.num ) {
+                $( '.b-estate-filter__num' ).text( data.num );
+                $( '.b-estate-filter__text' ).text( data.text );
+              }
             }
           },
           error: ajaxError
@@ -117,8 +126,10 @@
           success: function(data) {
             if ( data.status && data.status === 'success' ) {
               $filter.removeClass( 'i-preloader' );
-              $( '.b-estate-filter__num' ).text( data.num );
-              $( '.b-estate-filter__text' ).text( data.text );
+              if ( data.num ) {
+                $( '.b-estate-filter__num' ).text( data.num );
+                $( '.b-estate-filter__text' ).text( data.text );
+              }
             }
           },
           error: ajaxError
