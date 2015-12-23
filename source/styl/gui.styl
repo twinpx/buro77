@@ -67,7 +67,7 @@ ul
     padding-left 23px
   
 .b-content
-  padding 20px 55px 55px
+  padding 20px 50px 55px
   background-color $content-bg
   color $text-color
   
@@ -96,19 +96,28 @@ ul
       width 220px
       min-height 1px
       float left
+      
+      &.i-reverse
+        float right
+        
+        .b-el-small
+          left auto
+          right 0
         
   .b-block-b
     
     @media( min-width $breakpoint-desktop )
       min-height 1px
       padding-left 220px
+      
+      &.i-reverse
+        padding-right 220px
+        padding-left 0
         
   &:after
     clear both
-    content "."
-    display block
-    height 0
-    visibility hidden
+    content ""
+    display table
   
 .b-data-table
   width 100%
@@ -271,3 +280,5 @@ ul
   img
     vertical-align top
 
+.nicescroll-rails
+  z-index 20 !important

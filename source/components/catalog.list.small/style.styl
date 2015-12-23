@@ -15,7 +15,6 @@
     width 220px
     background embedurl("img/bg.gif") repeat-y 0 0
   
-    
   &__i
     position relative
     background url(/template/images/preloader-small-25.gif) no-repeat 32px 32px #252525
@@ -80,7 +79,7 @@
       opacity(1)
     
     
-    &:first-child
+    /*&:first-child
       cursor default
       
       .b-el-small__i__img-bw,
@@ -96,7 +95,7 @@
       
       .b-el-small__i__shutter
         background embedurl("img/first-arrow.png") no-repeat center center
-      
+    */
     
     
     &:hover &__img
@@ -105,17 +104,22 @@
     
     &__props
       display block
+      width 100%
       position absolute
-      bottom 8%
+      bottom 14%
       right 0
       box-sizing( border-box )
-      padding 0 8%
+      padding 0
       text-align right
-      font-size $font-size-xs
+      font-size $font-size-sm
+      font-weight bold
+      text-align center
       z-index 12
       
       span
-        font-size $font-size-xxs
+        display block
+        font-size $font-size-bs
+        margin-bottom 45px
       
       
       @media ( max-width $breakpoint-tablet )

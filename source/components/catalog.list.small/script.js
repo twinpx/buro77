@@ -28,6 +28,11 @@
       }, delay );
       
     }
+    
+    setTimeout( function() {
+      $( '.b-el-small' ).niceScroll();
+    }, 100);
+    
   });
 
 }( jQuery ));

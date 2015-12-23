@@ -6,20 +6,17 @@ script( src="/components/catalog.list.small/script.js" )
 .b-el-small
   
   .b-el-small__wrapper
-    span.b-el-small__i
+    //span.b-el-small__i
       img.b-el-small__i__img-bw( src="/upload/estates/2-bw.jpg" )
       img.b-el-small__i__img( src="/upload/estates/2.jpg" )
       span.b-el-small__i__shutter
       span.b-el-small__i__props
-        |Лот: 1973
+        span F1008
+        |213 м<sup>2</sup>
         br
-        span Площадь: 
-        |72—213 м?
-        br
-        span Район: 
-        |Тверская
+        |7 800 000 руб.
 
-    - var n = 15
+    - var n = 25
     while n > 0
       - n--
       a.b-el-small__i( href="/estate/" )
@@ -27,12 +24,9 @@ script( src="/components/catalog.list.small/script.js" )
         img.b-el-small__i__img( src="/upload/estates/3.jpg" )
         span.b-el-small__i__shutter
         span.b-el-small__i__props
-          |Лот: 1973
+          span F1008
+          |213 м<sup>2</sup>
           br
-          span Площадь: 
-          |72—213 м?
-          br
-          span Район: 
-          |Тверская
+          |7 800 000 руб.
 
 // end /components/catalog.list.small/

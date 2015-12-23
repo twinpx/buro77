@@ -1,15 +1,13 @@
-﻿extends ../layouts/main.jade
+﻿extends ../layouts/estate.jade
 
 block title
   title Estate | Buro77
 
 block content
-  .b-grid-e
-    .b-block-a
-      include ../components/catalog.list.small/template
-    .b-block-b
-      .b-content
-        include ../components/catalog.element/template
+
+  .b-content
+    include ../components/catalog.element/template
         
-  hr
+    hr
+    
   include ../components/contact.form/template

@@ -1,5 +1,7 @@
 function windowEvents() {
     $( window ).bind( "scroll", scrollWindow).scroll();
+    
+    $( 'html' ).niceScroll();
 
     function scrollWindow(e) {
       if ( !document.getElementById( '#bx-panel' )) {
