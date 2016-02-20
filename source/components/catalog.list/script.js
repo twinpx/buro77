@@ -10,7 +10,7 @@
     //button
     $filter.delegate( '.b-estate-filter__button button', 'click', function() {
       $.ajax({
-        url: '/components/catalog.list/send.json',
+        url: '/json/send.php',
         type: 'GET',
         dataType: "json",
         data: "id=" + $( '#estateFilter .i-active:last' ).data( 'id' ),
@@ -20,9 +20,10 @@
             $( '.b-estate-filter__menu2' ).slideUp();
             $( '.b-estate-filter__menu3' ).slideUp();
             $( '.b-estate-filter__number' ).slideUp();
-            var $list = $( '.b-estate-list' );
+            var $list = $( '.b-estate-list:eq(0)' );
+            var $lists = $( '.b-estate-list' );
             $list.before( data.html );
-            $list.remove();
+            $lists.remove();
             onloadList( $( ".b-estate-list" ));
           }
         },
@@ -36,9 +37,9 @@
         e.preventDefault();
         var $a = $( this );
         
-        if ( $a.hasClass( 'i-active' )) {
+        /*if ( $a.hasClass( 'i-active' )) {
           return;
-        }
+        }*/
         
         $a.closest( 'menu' ).find( 'a' ).removeClass( 'i-active' );
         $a.addClass( 'i-active' );
@@ -48,7 +49,7 @@
         $( '.b-estate-filter__menu3' ).slideUp();
         
         $.ajax({
-          url: '/components/catalog.list/reply1.json',
+          url: '/json/step1.php',
           type: 'GET',
           dataType: "json",
           data: "id=" + $a.data( 'id' ),
@@ -85,7 +86,7 @@
         $( '.b-estate-filter__menu3' ).slideUp();
         
         $.ajax({
-          url: '/components/catalog.list/reply2.json',
+          url: '/json/step2.php',
           type: 'GET',
           dataType: "json",
           data: "id=" + $a.data( 'id' ),
@@ -119,7 +120,7 @@
         $filter.addClass( 'i-preloader' );
         
         $.ajax({
-          url: '/components/catalog.list/reply3.json',
+          url: '/json/step3.php',
           type: 'GET',
           dataType: "json",
           data: "id=" + $a.data( 'id' ),
