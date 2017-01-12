@@ -5,7 +5,7 @@ module.exports = function( grunt ) {
     source: 'source/',
     dest: 'dest/',
     temp: 'temp/',
-    prod: 'Z:/whest/markup/',
+    prod: /*'Z:/whest/*/'markup/',
     
     jade: {
       dev: {
@@ -63,7 +63,8 @@ module.exports = function( grunt ) {
             [
               '<%= source%>styl/template_styles.styl',
               '<%= source%>modules/**/*.styl'
-            ]
+            ],
+          '<%= dest%>presentation/styles.css':'<%= source%>presentation/styles.styl'
         }
       },
       components: {
@@ -232,7 +233,7 @@ module.exports = function( grunt ) {
       prodTemplate: {
         options: {
           mangle: true,
-          compress: true,
+          compress: {},
           preserveComments: 'some'
         },
         files: [
@@ -244,7 +245,7 @@ module.exports = function( grunt ) {
       prodComponents: {
         options: {
           mangle: true,
-          compress: true
+          compress: {}
         },
         files: [
           {
@@ -279,6 +280,12 @@ module.exports = function( grunt ) {
             cwd: '<%= source %>images/',
             src: [ '**/*.*' ],
             dest: '<%= dest %>template/images/'
+          },
+          {
+            expand: true,
+            cwd: '<%= source %>presentation/images/',
+            src: [ '**/*.*' ],
+            dest: '<%= dest %>presentation/images/'
           }
         ]
       },

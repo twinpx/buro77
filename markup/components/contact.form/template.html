@@ -1,0 +1,34 @@
+
+<!-- start /components/contact.form/-->
+<link rel="stylesheet" href="/components/contact.form/style.css"/>
+<script src="/components/contact.form/script.js"></script>
+<div id="contactForm" class="b-contact-form">
+  <div class="b-contact-form__content">
+    <h2>Не нашли подходящее предложение?<br/>Напишите нам, мы подберем для вас вариант</h2>
+    <form action="/components/contact.form/send.json" method="get">
+      <div class="ui-field-contain">
+        <input type="text" name="name" value="" placeholder="Представьтесь" required="required"/>
+      </div>
+      <div class="b-row">
+        <div class="b-col-sm-6">
+          <div class="ui-field-contain">
+            <input type="email" name="email" value="" placeholder="Email" required="required"/>
+          </div>
+        </div>
+        <div class="b-col-sm-6">
+          <div class="ui-field-contain">
+            <input type="tel" name="tel" value="" placeholder="Телефон" required="required"/>
+          </div>
+        </div>
+      </div>
+      <div class="ui-field-contain">
+        <textarea name="details" cols="40" rows="8" placeholder="Расскажите о деталях" required="required"></textarea>
+      </div>
+      <div class="ui-field-contain">
+        <button type="submit" class="i-theme-a">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <div class="b-form-message">Ваша заявка отправлена. В ближайшее время с Вами свяжется наш представитель.</div>
+</div>
+<!-- end /components/contact.form/-->

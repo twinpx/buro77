@@ -1,0 +1,1 @@
+!function(a){"use strict";a(function(){a("#toContactForm").click(function(){a(window).scrollTo("#contactForm",500)}),a(".b-address-link").click(function(b){a.scrollTo(".b-estate__map",500),b.preventDefault()})})}(jQuery);

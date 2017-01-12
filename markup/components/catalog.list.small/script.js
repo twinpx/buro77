@@ -1,0 +1,1 @@
+!function(a){"use strict";a(function(){function b(a){var b=Number(500*Math.random()).toFixed(2);setTimeout(function(){a.closest(".b-el-small__i").addClass("i-loaded")},b)}a(".b-el-small__i__img-bw").each(function(){var c=this,d=a(c);c.complete?b(d):d.load(function(){b(d)})}),setTimeout(function(){a(".b-el-small").niceScroll()},100)})}(jQuery);
