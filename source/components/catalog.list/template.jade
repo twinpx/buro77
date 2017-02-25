@@ -7,51 +7,113 @@ include ./filter
 
 .b-estate-list
 
-  a.b-estate-list__i.i-large-item( href="/estate/" )
-    span.b-estate-list__i__shutter
-    span.b-estate-list__i__title Сосновая аллея
-    span.b-estate-list__i__props
-      | Лот: 1973
-      br
-      span Площадь: 
-      | 72—213 м?
-      br
-      span Район: 
-      | Тверская
-      span.b-estate-list__i__price 120 000 000 руб.
-      
-    img.b-estate-list__i__big-img-bw( src="/upload/estates/1.jpg" )
-    img.b-estate-list__i__big-img( src="/upload/estates/2.jpg" )
-    
-    .b-estate-list__img-div-bw( style="background-image: url( '/upload/estates/1.jpg' )" )
-    .b-estate-list__img-div( style="background-image: url( '/upload/estates/2.jpg' )" )
-    
-    img.b-estate-list__i__small-img-bw( src="/upload/estates/1-small.jpg" )
-    img.b-estate-list__i__small-img( src="/upload/estates/3.jpg" )
-  
-  - var n = 5
-  while n > 0
-    - n--
-    a.b-estate-list__i( href="/estate/" data-img-bw-src="/upload/estates/2-bw.jpg" data-img-src="/upload/estates/2.jpg" )
-      img.b-estate-list__i__img-bw( src="/template/images/tr.gif" )
-      img.b-estate-list__i__img( src="/template/images/tr.gif" )
-      span.b-estate-list__i__shutter
-      span.b-estate-list__i__title Сосновая аллея
-      span.b-estate-list__i__props
-        | Лот: 1973
-        br
-        span Площадь: 
-        | 72—213 м?
-        br
-        span Район: 
-        | Тверская
-        span.b-estate-list__i__price 120 000 000 руб.
-      
-  .b-estate-list__empty
-    .b-estate-list__empty__cont
-      - var n = 4
+    a.b-estate-list__i( href="/estate/" data-img-bw-src="/upload/estates/1-small.jpg" data-img-src="/upload/estates/2.jpg" )
+        img.b-estate-list__i__img-bw( src="/template/images/tr.gif" )
+        img.b-estate-list__i__img( src="/template/images/tr.gif" )
+        span.b-estate-list__i__shutter
+        span.b-estate-list__i__props
+            | Aeroflots
+            br
+            span Ул. Викторенко, 16, Москва,  Росссия
+            //span Район:
+            //| Тверская
+            span.b-estate-list__i__label
+                span.b-estate-list__i__count 80
+                br
+                | Объектов
+                span.b-estate-list__i__folder-icon
+        span.b-estate-list__i__info
+            span.b-estate-list__i__info-title Aeroflots
+            br
+            span Ул. Викторенко, 16, Москва,  Росссия
+            br
+            b Площадь
+            br
+            span 300 м
+                sup 2
+            br
+            b Комнат
+            span 4
+            br
+            b Продажа
+            span от 3 000 000 руб
+            br
+            b Аренда
+            span от 200 000 руб
+            span.b-estate-list__i__info-icons
+                span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--fit
+                span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--shop
+                span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--beauty
+                span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--edu
+                span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--restor
+                span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--med
+
+    - var n = 5
       while n > 0
         - n--
-        .b-estate-list__empty__i
-        
+        a.b-estate-list__i( href="/estate/" data-img-bw-src="/upload/estates/1-small.jpg" data-img-src="/upload/estates/2.jpg" )
+            img.b-estate-list__i__img-bw( src="/template/images/tr.gif" )
+            img.b-estate-list__i__img( src="/template/images/tr.gif" )
+            span.b-estate-list__i__shutter
+            span.b-estate-list__i__props
+                | Aeroflots
+                br
+                span Ул. Викторенко, 16, Москва,  Росссия
+                //span Район:
+                //| Тверская
+                span.b-estate-list__i__label
+                    span.b-estate-list__i__count 80
+                    br
+                    | Объектов
+                    span.b-estate-list__i__folder-icon
+            span.b-estate-list__i__info
+                span.b-estate-list__i__info-title Aeroflots
+                br
+                span Ул. Викторенко, 16, Москва,  Росссия
+                br
+                b Площадь
+                br
+                span 300 м
+                    sup 2
+                br
+                b Комнат
+                span 4
+                br
+                b Продажа
+                span от 3 000 000 руб
+                br
+                b Аренда
+                span от 200 000 руб
+                span.b-estate-list__i__info-icons
+                    span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--fit
+                    span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--shop
+                    span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--beauty
+                    span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--edu
+                    span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--restor
+                    span.b-estate-list__i__info-icon.b-estate-list__i__info-icon--med
+  - var n = 5
+  //while n > 0
+  //  - n--
+  //  a.b-estate-list__i( href="/estate/" data-img-bw-src="/upload/estates/2-bw.jpg" data-img-src="/upload/estates/2.jpg" )
+  //    img.b-estate-list__i__img-bw( src="/template/images/tr.gif" )
+  //    img.b-estate-list__i__img( src="/template/images/tr.gif" )
+  //    span.b-estate-list__i__shutter
+  //    span.b-estate-list__i__title Сосновая аллея
+  //    span.b-estate-list__i__props
+  //      | Лот: 1973
+  //      br
+  //      span Площадь:
+  //      | 72—213 м?
+  //      br
+  //      span Район:
+  //      | Тверская
+  //      span.b-estate-list__i__price 120 000 000 руб.
+
+  //.b-estate-list__empty
+  //  .b-estate-list__empty__cont
+  //    - var n = 4
+  //    while n > 0
+  //      - n--
+  //      .b-estate-list__empty__i
+
 // end /components/catalog.list/

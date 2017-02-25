@@ -137,8 +137,21 @@
     &.i-loaded &__shutter,
     &.i-img-loaded:hover &__img
       opacity(1)
-    
-    
+
+
+    &.i-loaded &__props
+      transform: translate(0);
+      opacity(1)
+
+    &.i-loaded:hover &__props
+      transform: translate(100%);
+      opacity(0)
+
+    &.i-loaded:hover &__info
+      transform: translate(0);
+      opacity(1)
+
+
     &__title
       display block
       position absolute
@@ -147,7 +160,6 @@
       width 50%
       text-align left
       font-size 18pt
-      line-height 1.4
       word-wrap break-word
       box-sizing( border-box )
       padding-left 50px
@@ -162,28 +174,132 @@
     &__props
       display block
       position absolute
-      bottom 8%
-      right 0
-      width 50%
       box-sizing( border-box )
-      padding-right 50px
-      text-align right
-      font-size 10.5pt
+      padding: 35px 30px 40px
+      bottom: 0;
+      right: 0
+      background: rgba(0, 0, 0, .8);
+      text-align: left
+      font-size: 14px
+      font-weight: bold
+      width: 250px
       z-index 12
-    
-      @media ( max-width 520px)
-        padding-right 20px
-      
-      
+      transition( all 0.3s cubic-bezier(0.4, 0, 1, 1) )
+      transition-delay: 0.3s
+      transform: translate(100%)
+      overflow: hidden
+      opacity(0)
+
+      @media ( max-width 1198px)
+        padding: 25px 20px 30px
+        width: 185px
+        font-size: 10px
+
+
       span
-        font-size 8pt
-      
-    
-    
+        font-size 12px
+        font-weight: normal
+        @media ( max-width 1198px)
+          font-size: 9px
+
+    &__info
+      display: block
+      height: 100%
+      width: 250px
+      padding: 30px
+      background: rgba(0,0,0,0.8)
+      position: absolute
+      line-height: 1
+      top: 0
+      right: 0
+      box-sizing: border-box
+      z-index: 12
+      font-size: 14px
+      transition( all 0.3s cubic-bezier(0.4, 0, 1, 1) )
+      transition-delay: 0.3s
+      transform: translate(100%)
+      overflow: hidden
+      opacity(0)
+
+      @media ( max-width 1198px)
+        padding: 20px
+        width: 185px
+        font-size: 13px
+
+      b
+        display: inline-block
+        margin-bottom: 10px
+
+      span
+        display: block
+
+      span&-title
+        font-size: 18px
+        font-weight: bold
+
+      span&-icons
+        margin-top: 30px
+        display: block
+        width: 100%
+
+      span&-icon
+        width: 24px
+        height: 24px
+        display: inline-block
+        margin: 0 12px 6px;
+        background: url("/template/images/icons/icons.png") no-repeat;
+        @media ( max-width 1198px)
+          margin: 0 6px 6px;
+        &:nth-child(4n)
+          margin-right: 0
+        &--fit
+          background-position: 0 0
+        &--shop
+          background-position: (0 - 1* 48px) 0
+        &--beauty
+          background-position: (0 - 2* 48px) 0
+        &--edu
+          background-position: (0 - 3* 48px) 0
+        &--restor
+          background-position: 0 -39px
+        &--med
+          background-position: -48px -39px
+
+
+
+    span&__label
+      display: block
+      font-size: 11px
+      margin-top: 30px
+      position: relative
+      width: 100%
+      text-transform: lowercase
+
+      @media ( max-width 1198px)
+        font-size: 8px
+
+    span&__count
+      font-weight: bold
+      font-size: 18px
+
+      @media ( max-width 1198px)
+        font-size: 13px
+
+    span&__folder-icon
+      position: absolute
+      right: 0
+      background: url("/template/images/icons/folder.png") no-repeat
+      width: 24px
+      height: 24px
+      top: 50%
+      transform: translate(0, -50%)
+
+
     span&__price
       display block
       margin-top 14px
       font-size 13.5pt
+
     
     
     @media ( min-width 801px )
