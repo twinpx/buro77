@@ -168,9 +168,34 @@
     
       @media ( max-width 520px)
         padding-left 20px
-      
-    
-    
+
+
+
+    &__hot
+      background: #ff4242
+      padding: 15px 30px 20px
+      width: 250px
+      box-sizing( border-box )
+      position absolute
+      font-size 14px
+      top 0
+      right 0
+
+      span&-icon
+        background: url("/template/images/icons/fire.png") no-repeat;
+        width: 16px
+        height: 24px
+        display: inline-block
+        vertical-align: bottom
+        margin-right: 25px
+
+        @media ( max-width 1198px)
+          margin-right: 20px
+
+      @media ( max-width 1198px)
+        width: 185px
+        padding: 10px 25px 15px
+
     &__props
       display block
       position absolute
@@ -182,6 +207,7 @@
       text-align: left
       font-size: 14px
       font-weight: bold
+      height: 180px
       width: 250px
       z-index 12
       transition( all 0.3s cubic-bezier(0.4, 0, 1, 1) )
@@ -199,6 +225,8 @@
       span
         font-size 12px
         font-weight: normal
+        margin-top: 8px
+        display: inline-block
         @media ( max-width 1198px)
           font-size: 9px
 
@@ -224,7 +252,7 @@
       @media ( max-width 1198px)
         padding: 20px
         width: 185px
-        font-size: 13px
+        font-size: 11px
 
       b
         display: inline-block
@@ -232,6 +260,8 @@
 
       span
         display: block
+        max-height 22px
+        text-overflow ellipsis
 
       span&-title
         font-size: 18px
@@ -242,11 +272,11 @@
         display: block
         width: 100%
 
-      span&-icon
+      div&-icon
         width: 24px
         height: 24px
         display: inline-block
-        margin: 0 12px 6px;
+        margin: 0 11px 6px;
         background: url("/template/images/icons/icons.png") no-repeat;
         @media ( max-width 1198px)
           margin: 0 6px 6px;
@@ -270,7 +300,7 @@
     span&__label
       display: block
       font-size: 11px
-      margin-top: 30px
+      margin-top: 20px
       position: relative
       width: 100%
       text-transform: lowercase
@@ -281,6 +311,7 @@
     span&__count
       font-weight: bold
       font-size: 18px
+      margin: 0
 
       @media ( max-width 1198px)
         font-size: 13px
@@ -293,6 +324,7 @@
       height: 24px
       top: 50%
       transform: translate(0, -50%)
+      margin: 0
 
 
     span&__price
