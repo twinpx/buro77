@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contacts | Buro77</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <script src="/template/jquery.js"></script>
+    <script src="/template/jscript.js"></script>
+  </head>
+  <body>
+    <div class="b-side">
+      <div class="b-side-icons"><a id="sideBarButton" href="#sidePanel" class="b-side-bar__button"></a><span id="sideBarTop" class="b-side-bar__top">наверх</span><a href="/favorites/" class="b-favorites-link"><span class="b-favorites-link__num">15</span></a></div>
+      <div id="sideBar" class="b-side-bar">
+        <div class="b-side-bar__content">
+          <menu>
+            <li><a href="/estates/">Объекты недвижимости</a>
+              <menu>
+                <li><a href="/estates/">Загородная <span>23</span></a></li>
+                <li><a href="/estates/">Городская <span>4</span></a></li>
+                <li><a href="/estates/">Коммерческая <span>2</span></a></li>
+              </menu>
+            </li>
+            <li><a href="/about/">О компании</a></li>
+            <li><a href="/estates/">Сотрудничество</a></li>
+            <li><a href="/contacts/">Контакты</a></li>
+          </menu>
+        </div>
+      </div>
+    </div>
+    <header class="b-header">
+      <div class="b-phone">8 499 999 34 45</div>
+      <div class="b-logo"><a href="/" class="b-logo__title"><img src="/upload/buro77-logo.png" width="111" height="47"></a> <span class="b-logo__slogan">Элитная недвижимость</span></div>
+    </header>
+    <section class="b-page-container">
+      <div class="b-content">
+        <h1>Контакты Buro 77</h1>
+        <p>Если у вас есть интересное предложение вы можете связаться с нами.</p>
+        <p><b>Телефон:</b>&nbsp;8 495 215 16 55<br><b>Email:</b>&nbsp;<a href="mailto:info@buro77.ru">info@buro77.ru</a><br><b>Адрес:</b>109044, Москва, 1-й Крутицкий переулок., д. 3, стр. 1, офис 1.</p>
+        <h2>Схема проезда</h2>
+        <div id="estateMap" style="height: 450px;" class="i-border">
+          <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=Wa3Q9dYruHRftSb8fWLAeirmyIIPq9wD&amp;width=100%&amp;height=450"></script>
+        </div>
+      </div>
+    </section>
+    <footer class="b-footer">
+      <div class="b-row">
+        <div class="b-col-sm-6"><a href="/" class="b-logo__title">Buro 77</a>
+          <div class="b-footer__slogan">Элитная недвижимость</div>
+          <div class="b-footer__address">1-й Крутицкий переулок., д. 3, стр. 1, офис 1.</div>
+        </div>
+        <div class="b-col-sm-6">
+          <div class="b-phone">8 499 999 34 45</div>
+          <div id="bx-composite-banner"><a target="_blank" href="http://www.1c-bitrix.ru/composite/" style="background-color: rgb(233, 69, 36);" class="bx-composite-btn bx-btn-white bx-composite-btn-fixed">Быстро с 1С-Битрикс</a></div>
+        </div>
+      </div>
+    </footer>
+    <style>
+      .bx-btn-white {
+       background-position: right 0;
+       color: #fff !important;
+      }
+      .bx-composite-btn-fixed {
+       position: absolute;
+       top: -45px;
+       right: 15px;
+       z-index: 10;
+      }
+      .bx-composite-btn {
+       background: url(/bitrix/images/main/composite/sprite-1x.png) no-repeat right 0 #e94524;
+       border-radius: 15px;
+       color: #ffffff !important;
+       display: inline-block;
+       line-height: 30px;
+       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+       font-size: 12px !important;
+       font-weight: bold !important;
+       height: 31px !important;
+       padding: 0 42px 0 17px !important;
+       vertical-align: middle !important;
+       text-decoration: none !important;
+      }
+    </style>
+  </body>
+</html>

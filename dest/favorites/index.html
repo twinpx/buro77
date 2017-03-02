@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorites | Buro77</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <script src="/template/jquery.js"></script>
+    <script src="/template/jscript.js"></script>
+  </head>
+  <body>
+    <div class="b-side">
+      <div class="b-side-icons"><a id="sideBarButton" href="#sidePanel" class="b-side-bar__button"></a><span id="sideBarTop" class="b-side-bar__top">наверх</span><a href="/favorites/" class="b-favorites-link"><span class="b-favorites-link__num">15</span></a></div>
+      <div id="sideBar" class="b-side-bar">
+        <div class="b-side-bar__content">
+          <menu>
+            <li><a href="/estates/">Объекты недвижимости</a>
+              <menu>
+                <li><a href="/estates/">Загородная <span>23</span></a></li>
+                <li><a href="/estates/">Городская <span>4</span></a></li>
+                <li><a href="/estates/">Коммерческая <span>2</span></a></li>
+              </menu>
+            </li>
+            <li><a href="/about/">О компании</a></li>
+            <li><a href="/estates/">Сотрудничество</a></li>
+            <li><a href="/contacts/">Контакты</a></li>
+          </menu>
+        </div>
+      </div>
+    </div>
+    <header class="b-header">
+      <div class="b-phone">8 499 999 34 45</div>
+      <div class="b-logo"><a href="/" class="b-logo__title"><img src="/upload/buro77-logo.png" width="111" height="47"></a> <span class="b-logo__slogan">Элитная недвижимость</span></div>
+    </header>
+    <section class="b-page-container">
+      <!-- start /components/catalog.list/-->
+      <link rel="stylesheet" href="/components/catalog.list/style.css">
+      <script src="/components/catalog.list/script.js"></script>
+      <div class="b-estate-list i-empty">
+        <div class="b-estate-list__empty">
+          <div class="b-estate-list__empty__cont">
+            <div class="b-estate-list__empty__i"><a href="" class="b-empty-link"><span class="b-empty-link__cont"><span>Добавьте<br>что-то в<br>избранное</span></span></a></div>
+            <div class="b-estate-list__empty__i"><a href="" class="b-empty-link"><span class="b-empty-link__cont"><span>Добавьте<br>что-то в<br>избранное</span></span></a></div>
+            <div class="b-estate-list__empty__i"><a href="" class="b-empty-link"><span class="b-empty-link__cont"><span>Добавьте<br>что-то в<br>избранное</span></span></a></div>
+            <div class="b-estate-list__empty__i"><a href="" class="b-empty-link"><span class="b-empty-link__cont"><span>Добавьте<br>что-то в<br>избранное</span></span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="b-estate-list"><a href="/estate/" data-img-bw-src="/upload/estates/2-bw.jpg" data-img-src="/upload/estates/2.jpg" class="b-estate-list__i"><img src="/template/images/tr.gif" class="b-estate-list__i__img-bw"><img src="/template/images/tr.gif" class="b-estate-list__i__img"><span class="b-estate-list__i__shutter"></span><span class="b-estate-list__i__title">Сосновая аллея</span><span class="b-estate-list__i__props">Лот: 1973<br><span>Площадь: </span>72—213 м?<br><span>Район: </span>Тверская<span class="b-estate-list__i__price">120 000 000 руб.</span></span></a>
+        <div class="b-estate-list__empty">
+          <div class="b-estate-list__empty__cont">
+            <div class="b-estate-list__empty__i"><a href="" class="b-empty-link"><span class="b-empty-link__cont"><span>Добавьте<br>что-то в<br>избранное</span></span></a></div>
+            <div class="b-estate-list__empty__i"><a href="" class="b-empty-link"><span class="b-empty-link__cont"><span>Добавьте<br>что-то в<br>избранное</span></span></a></div>
+            <div class="b-estate-list__empty__i"><a href="" class="b-empty-link"><span class="b-empty-link__cont"><span>Добавьте<br>что-то в<br>избранное</span></span></a></div>
+            <div class="b-estate-list__empty__i"><a href="" class="b-empty-link"><span class="b-empty-link__cont"><span>Добавьте<br>что-то в<br>избранное</span></span></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- end /components/catalog.list/-->
+      <hr>
+      <!-- start /components/contact.form/-->
+      <link rel="stylesheet" href="/components/contact.form/style.css">
+      <script src="/components/contact.form/script.js"></script>
+      <div id="contactForm" class="b-contact-form">
+        <div class="b-contact-form__content">
+          <h2>Не нашли подходящее предложение?<br>Напишите нам, мы подберем для вас вариант</h2>
+          <form action="/components/contact.form/send.json" method="get">
+            <div class="ui-field-contain">
+              <input type="text" name="name" value="" placeholder="Представьтесь" required>
+            </div>
+            <div class="b-row">
+              <div class="b-col-sm-6">
+                <div class="ui-field-contain">
+                  <input type="email" name="email" value="" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="b-col-sm-6">
+                <div class="ui-field-contain">
+                  <input type="tel" name="tel" value="" placeholder="Телефон" required>
+                </div>
+              </div>
+            </div>
+            <div class="ui-field-contain">
+              <textarea name="details" cols="40" rows="8" placeholder="Расскажите о деталях" required></textarea>
+            </div>
+            <div class="ui-field-contain">
+              <button type="submit" class="i-theme-a">Отправить</button>
+            </div>
+          </form>
+        </div>
+        <div class="b-form-message">Ваша заявка отправлена. В ближайшее время с Вами свяжется наш представитель.</div>
+      </div>
+      <!-- end /components/contact.form/-->
+    </section>
+    <footer class="b-footer">
+      <div class="b-row">
+        <div class="b-col-sm-6"><a href="/" class="b-logo__title">Buro 77</a>
+          <div class="b-footer__slogan">Элитная недвижимость</div>
+          <div class="b-footer__address">1-й Крутицкий переулок., д. 3, стр. 1, офис 1.</div>
+        </div>
+        <div class="b-col-sm-6">
+          <div class="b-phone">8 499 999 34 45</div>
+          <div id="bx-composite-banner"><a target="_blank" href="http://www.1c-bitrix.ru/composite/" style="background-color: rgb(233, 69, 36);" class="bx-composite-btn bx-btn-white bx-composite-btn-fixed">Быстро с 1С-Битрикс</a></div>
+        </div>
+      </div>
+    </footer>
+    <style>
+      .bx-btn-white {
+       background-position: right 0;
+       color: #fff !important;
+      }
+      .bx-composite-btn-fixed {
+       position: absolute;
+       top: -45px;
+       right: 15px;
+       z-index: 10;
+      }
+      .bx-composite-btn {
+       background: url(/bitrix/images/main/composite/sprite-1x.png) no-repeat right 0 #e94524;
+       border-radius: 15px;
+       color: #ffffff !important;
+       display: inline-block;
+       line-height: 30px;
+       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+       font-size: 12px !important;
+       font-weight: bold !important;
+       height: 31px !important;
+       padding: 0 42px 0 17px !important;
+       vertical-align: middle !important;
+       text-decoration: none !important;
+      }
+    </style>
+  </body>
+</html>
