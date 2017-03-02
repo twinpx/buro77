@@ -1,5 +1,4 @@
 .idea
-dest
 node_modules
 *.sublime-workspace
 *.sublime-project

@@ -166,6 +166,7 @@ module.exports = function( grunt ) {
           eqnull: true,
           browser: true,
           newcap: true,
+		  reporterOutput: "",
           globals: {
             jQuery: true,
             console: true
