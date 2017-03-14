@@ -589,7 +589,7 @@
                 c.css({
                     position: "relative",
                     top: 0,
-                    float: "right",
+                    "float": "right",
                     width: a.opt.cursorwidth,
                     height: "0px",
                     "background-color": a.opt.cursorcolor,

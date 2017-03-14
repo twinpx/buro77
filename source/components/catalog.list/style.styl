@@ -237,7 +237,6 @@
       padding: 30px
       background: rgba(0,0,0,0.8)
       position: absolute
-      line-height: 1
       top: 0
       right: 0
       box-sizing: border-box
@@ -249,18 +248,20 @@
       overflow: hidden
       opacity(0)
 
-      @media (min-width 800px) and (max-width 920px)
+      @media (min-width 800px) and (max-width 1015px),
+             (min-width 1201px) and (max-width 1450px),
+             (min-width 1601px) and (max-width 1915px)
         padding: 20px
         width: 185px
         font-size: 11px
 
       b
-        display: inline-block
-        margin-bottom: 10px
+        display: block
+        margin: 15px 0 5px
 
       span
         display: block
-        max-height 22px
+        //max-height 22px
         text-overflow ellipsis
 
       span&-title
@@ -294,6 +295,12 @@
           background-position: 0 -39px
         &--med
           background-position: -48px -39px
+          
+        @media (min-width 800px) and (max-width 1015px),
+               (min-width 1201px) and (max-width 1450px),
+               (min-width 1601px) and (max-width 1915px)
+          transform scale(0.7)
+          margin 0 2px 2px
 
 
 

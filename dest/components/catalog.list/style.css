@@ -463,7 +463,6 @@ span.b-estate-list__i__hot-icon {
   padding: 30px;
   background: rgba(0,0,0,0.8);
   position: absolute;
-  line-height: 1;
   top: 0;
   right: 0;
   -webkit-box-sizing: border-box;
@@ -485,7 +484,7 @@ span.b-estate-list__i__hot-icon {
   -webkit-opacity: 0;
   -moz-opacity: 0;
 }
-@media (min-width: 800px) and (max-width: 920px) {
+@media (min-width: 800px) and (max-width: 1015px), (min-width: 1201px) and (max-width: 1450px), (min-width: 1601px) and (max-width: 1915px) {
   .b-estate-list__i__info {
     padding: 20px;
     width: 185px;
@@ -493,12 +492,11 @@ span.b-estate-list__i__hot-icon {
   }
 }
 .b-estate-list__i__info b {
-  display: inline-block;
-  margin-bottom: 10px;
+  display: block;
+  margin: 15px 0 5px;
 }
 .b-estate-list__i__info span {
   display: block;
-  max-height: 22px;
   text-overflow: ellipsis;
 }
 span.b-estate-list__i__info-title {
@@ -542,6 +540,15 @@ div.b-estate-list__i__info-icon--restor {
 }
 div.b-estate-list__i__info-icon--med {
   background-position: -48px -39px;
+}
+@media (min-width: 800px) and (max-width: 1015px), (min-width: 1201px) and (max-width: 1450px), (min-width: 1601px) and (max-width: 1915px) {
+  div.b-estate-list__i__info-icon {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    margin: 0 2px 2px;
+  }
 }
 span.b-estate-list__i__label {
   display: block;

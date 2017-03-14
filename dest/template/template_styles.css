@@ -214,6 +214,12 @@ th {
 .b-row:after {
   clear: both;
 }
+@media (max-width: 520px) {
+  .b-row {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}
 .b-col-xs-1,
 .b-col-sm-1,
 .b-col-md-1,
@@ -780,6 +786,12 @@ ul li {
 }
 .nicescroll-rails {
   z-index: 20 !important;
+}
+@media (max-width: 520px) {
+  .row {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
 }
 .b-page-container {
   padding: 0 0 0 127px;

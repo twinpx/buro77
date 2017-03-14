@@ -1,0 +1,16 @@
+﻿{
+  "status": "success",
+  "menu": [
+    {
+      "text": "Покупка",
+      "id": 11
+    },
+    {
+      "text": "Аренда",
+      "id": 12
+    }
+  ],
+  "html": "<menu><li><a href='' data-id='11'>Покупка</a></li><li><a href='' data-id='12'>Аренда</a></li></menu>",
+  "num": 18,
+  "text": "вариантов"
+}
