@@ -424,10 +424,10 @@ span.b-estate-list__i__hot-icon {
   height: 180px;
   width: 250px;
   z-index: 12;
-  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
-  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.4, 0, 1, 1);
   transition-delay: 0.3s;
   transform: translate(100%);
   -webkit-transform: translate(100%);
@@ -522,24 +522,6 @@ div.b-estate-list__i__info-icon {
 }
 div.b-estate-list__i__info-icon:nth-child(4n) {
   margin-right: 0;
-}
-div.b-estate-list__i__info-icon--fit {
-  background-position: 0 0;
-}
-div.b-estate-list__i__info-icon--shop {
-  background-position: -48px 0;
-}
-div.b-estate-list__i__info-icon--beauty {
-  background-position: -96px 0;
-}
-div.b-estate-list__i__info-icon--edu {
-  background-position: -144px 0;
-}
-div.b-estate-list__i__info-icon--restor {
-  background-position: 0 -39px;
-}
-div.b-estate-list__i__info-icon--med {
-  background-position: -48px -39px;
 }
 @media (min-width: 800px) and (max-width: 1015px), (min-width: 1201px) and (max-width: 1450px), (min-width: 1601px) and (max-width: 1915px) {
   div.b-estate-list__i__info-icon {
