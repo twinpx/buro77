@@ -44,3 +44,27 @@
   padding-top: 65%;
   height: 0 !important;
 }
+.b-estate .fotorama__nav-wrap {
+  display: none;
+}
+.fotorama .fotorama__arr {
+  width: 53px;
+  height: 53px;
+  background-size: cover;
+}
+.fotorama .fotorama__arr--next {
+  background: url("data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfNiIgZGF0YS1uYW1lPSLQodC70L7QuSA2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDUxLjM0IDE0NTEuMzQiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMjMxZjIwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NjBweDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPnJpZ2h0LWFycm93PC90aXRsZT48cG9seWxpbmUgY2xhc3M9ImNscy0xIiBwb2ludHM9IjcxMC40MyA1NyAxNDAyLjQzIDczMS4wMyA3MTEuNTMgMTQwNCIvPjwvc3ZnPg==") no-repeat center;
+  right: 15px;
+}
+.fotorama .fotorama__arr--prev {
+  background: url("data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfNyIgZGF0YS1uYW1lPSLQodC70L7QuSA3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDUxLjM0IDE0NTEuMzQiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMjMxZjIwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NjBweDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmxlZnQtYXJyb3c8L3RpdGxlPjxwb2x5bGluZSBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNzM5LjQzIDU1LjU1IDQ3LjQzIDcyOS41OCA3MzguMzMgMTQwMi41NSIvPjwvc3ZnPg==") no-repeat center;
+  left: 15px;
+}
+.fotorama--fullscreen .fotorama__fullscreen-icon {
+  width: 32px;
+  height: 32px;
+  background: url("data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfOCIgZGF0YS1uYW1lPSLQodC70L7QuSA4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDUxLjM0IDE0NTEuMzQiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMjMxZjIwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NjBweDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmNsb3NlPC90aXRsZT48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSI2OC4xNyIgeTE9IjY4LjE3IiB4Mj0iMTM4My4xNyIgeTI9IjEzODMuMTciLz48bGluZSBjbGFzcz0iY2xzLTEiIHgxPSIxMzgzLjE3IiB5MT0iNjguMTciIHgyPSI2OC4xNyIgeTI9IjEzODMuMTciLz48L3N2Zz4=") no-repeat center !important;
+  background-size: cover;
+  top: 20px;
+  right: 20px;
+}

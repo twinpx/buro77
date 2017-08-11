@@ -3,94 +3,119 @@
 link( rel="stylesheet", href="/components/catalog.element/style.css" )
 script( src="/components/catalog.element/script.js" )
 
-.b-estate
-  h1 Двухуровневая квартира общ. пл. 1040 кв.м., свободная планировка
-  
-  .b-estate__bar
-  
-    include ../../components/favorite/template
-    
-    a.b-address-link( href="#" target="_blank" )
-      span.b-address-link__text Россия, Москва, Молочный переулок, дом 3
-
-  .b-row.b-estate__props
-    .b-col-xs-2
-      h5 Лот
-      |560746
-    
-    .b-col-xs-2
-      h5 Площадь
-      |72-213 м
-      sup 2
-    
-    .b-col-xs-2
-      h5 Этаж
-      |3
-      
-    .b-col-xs-2
-      h5 Комнат
-      |3
-      
-    .b-col-xs-2
-      h5 Цена
-      |Договор
-  
-  hr
+.b-estate( itemscope itemtype="http://schema.org/Residence" )
   
   include ../../components/catalog.gallery/template
   
   hr
+  
+  #estateAbout.b-estate-about
+  
+    h1 Квартиры в I'M квартал
 
-  button#toContactForm.i-theme-b Оставить заявку
+    .b-row.b-estate__props
+    
+      .b-col-sm-4
+        img( src="/upload/estate-prop/1.png" width="100" height="100" alt="" )
+        h5( itemprop="amenityFeature" ) Собственный сад в голландском стиле Hyco Verhaagen.
+      
+      .b-col-sm-4
+        img( src="/upload/estate-prop/2.png" width="100" height="100" alt="" )
+        h5( itemprop="amenityFeature" ) Эксклюзивный дизайн AEDAS. 
+      
+      .b-col-sm-4
+        img( src="/upload/estate-prop/3.png" width="100" height="100" alt="" )
+        h5( itemprop="amenityFeature" ) Clubhouse — уникальный сервис для проведения деловых встреч.
+    
+    hr
+    
+    .description( itemprop="review" )
+    
+      h2 Квартиры и апартаменты в ЖК I’M
+      p Buro 77 представляет квартиры и апартаменты, а также коммерческие помещения в жилом комплексе I’M.
+      p I’M — элитный жилой квартал, расположен на Шлюзовой набережной, с видом на Московский международный Дом Музыки, Swissotel Красные Холмы и набережную Москвы-реки. Квартал состоит из двух элегантных 6-7-этажных строений.
+      p В жилом квартале предусмотрена просторная внутренняя территория площадью 1 гектар, где будет создан роскошный сад с зонами для активного и спокойного отдыха.
+      p Впервые в Москве жителям жилого квартала будет предложен уникальный сервис — Clubhouse, который будет включать в себя библиотеку, домашний кинотеатр, залы для проведения праздников, мероприятий и деловых встреч.
+      p Контроль доступа, система видеонаблюдения, круглосуточная консьерж-служба, охрана периметра комплекса, система видеодомофонов в квартирах и апартаментах.
   
   hr
   
-  .description
-    p В небольшой клубном доме напротив Зачатьевского монастыря в продажу предлагается просторная двухуровневая квартира на 2-м и 3-м этажах общей площадью 1040 кв.м.
-    p Из окон открываются чудесные виды на Храм и тихие переулки Остоженки. 
-    |Квартиру можно разделить как по вертикали, так и по горизонтали. 
-    |Минимальная площадь покупки - 260 кв.м. Есть возможность покупки как полностью 2 и 3 этажа, так и отдельно. Площади, соответственно по 520 м (этаж).
-    |Также, есть возможность приобрести машиноместа в подземном паркинге.
+  #estateData.b-estate-data
   
-  hr
+    h2 Данные жилого комплекса I’M квартал
 
-  table.b-data-table
-    colgroup
-      col.name
-      col.value
-    thead
-      tr
-        th Параметр
-        th Значение
-    tbody
-      tr
-        th Район
-        td Остоженка
-      tr
-        th Метро
-        td Кропоткинская, Парк Культуры
+    table.b-data-table
+      colgroup
+        col.name
+        col.value
+      tbody
+        tr
+          th Год постройки (срок сдачи ГК, ввода в эксплуатацию)
+          td 2018
+        tr
+          th Инфраструктура района
+          td Инфраструктура квартала полностью соответствует классу объект и включает: медицинский центр, спа-салон, частный детский сад на 45 мест, кафе и другие сервисы.
+        tr
+          th Адрес
+          td( itemprop="address" ) Улица, дом
   
   hr
   
-  .b-estate__plan
-    h2 Планировка
+  #estateProgress
+  
+    h2 Текущий этап строительства I’M квартал
+    
+    .b-estate-progressbar
+      .b-estate-progressbar__percent 70
+
+    .b-row.b-estate__props
+    
+      .b-col-sm-4
+        img( src="/upload/estate-prop/1.png" width="100" height="100" alt="" )
+        h5 Онлайн камера строительства ЖК i’M квартал.
+      
+      .b-col-sm-4
+        img( src="/upload/estate-prop/2.png" width="100" height="100" alt="" )
+        h5 Проектная декларация I'M.
+      
+  hr
+  
+  #estatePlan.b-estate__plan
+  
+    h2 Планировки i’M квартал
+    
     figure
-      img( src="/upload/estates/plan.gif" )
+    
+      .b-row
   
-  hr
-
-  .b-estate__map
-    h2 Схема проезда
-    .i-border
-      script( type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=Wa3Q9dYruHRftSb8fWLAeirmyIIPq9wD&amp;width=100%&amp;height=450" )
+        .b-col-sm-4
+          img( src="/upload/estate-plan.jpg" alt="" itemprop="photo" )
+          
+        hr.visible-xs-block.i-size-S
   
-  hr
-
-  a.b-download-panel( href="presentation.pdf" )
-    span.b-pdf-file
-      span.b-pdf-file__name
-        |Презентация объекта
-        br
-        span.small PDF 32 Мб
-
+        .b-col-sm-4
+          img( src="/upload/estate-plan.jpg" alt="" itemprop="photo" )
+          
+        hr.visible-xs-block.i-size-S
+  
+        .b-col-sm-4
+          img( src="/upload/estate-plan.jpg" alt="" itemprop="photo" )
+          
+      hr.i-size-S
+    
+      .b-row
+  
+        .b-col-sm-4
+          img( src="/upload/estate-plan.jpg" alt="" itemprop="photo" )
+          
+        hr.visible-xs-block.i-size-S
+  
+        .b-col-sm-4
+          img( src="/upload/estate-plan.jpg" alt="" itemprop="photo" )
+          
+        hr.visible-xs-block.i-size-S
+  
+        .b-col-sm-4
+          img( src="/upload/estate-plan.jpg" alt="" itemprop="photo" )
+  
 // end /components/catalog.element/

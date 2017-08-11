@@ -2,9 +2,9 @@
   background-color $header-bg
   color #333
   border none
-  padding 10px 50px 10px 177px
-  box-sizing( border-box )
-  min-height 75px
+  padding 20px 50px 5px 177px
+  box-sizing( content-box )
+  min-height 42px
   
   .b-block-b.i-reverse &
     padding-left 50px
@@ -21,53 +21,42 @@
     padding 35px 20px
     min-height 0
     text-align center
-  
-
-
-.b-logo
-  
-  &__title
-    ib()
-    font-size 18pt
-    text-transform uppercase
-    margin-right 42px
-    line-height 55px
-  
-    img
-      ib()
-      margin 2px 0 5px
-    
-    @media ( max-width $breakpoint-tablet )
-      line-height normal
-      margin-top -9px
-    
-    @media ( max-width $breakpoint-mobile )
-      margin -9px 0 10px
-    
-  &__slogan
-    ib()
-    font-size 10.5pt
-    line-height 55px
-    
-    @media ( max-width $breakpoint-tablet )
-      line-height normal
-      display block
-      margin-top 8px
-    
-    @media ( max-width $breakpoint-mobile )
-      display none
     
 .b-phone
   float right
-  line-height 55px
+  line-height 42px
   text-align right
-  font-size 13.5pt
+  font-size 9pt
   font-weight 700
-  color #333 !important
-  padding-left 39px
-  background embedurl( 'img/phone-header.png' ) no-repeat 0 center
+  color #e5241f !important
   
     
   @media ( max-width $breakpoint-mobile )
     display none
+    
+a.b-estate-logo
+  display block
+  float left
+  margin -5px 30px 0 0
   
+  @media ( max-width $breakpoint-mobile )
+    margin 0 0 20px
+    float none
+    
+.b-top-menu
+  float left
+  line-height 42px
+  
+  a,
+  span
+    text-transform uppercase
+    font-size 9pt
+    font-weight bold
+    margin-right 24px
+    display inline-block
+    vertical-align middle
+    
+  @media ( max-width $breakpoint-mobile )
+    float none
+    line-height 20px
+    

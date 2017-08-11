@@ -48,18 +48,17 @@
     
     &__button
       display block
-      width 69px
-      height 69px
-      background embedurl( 'img/icon.gif' ) no-repeat center center
-      margin 18px 0 20px 29px
+      width 35px
+      height 35px
+      background embedurl( 'img/menu.svg' ) no-repeat center center
+      background-size cover
+      margin 48px 0 30px 45px
     
       @media ( max-width $breakpoint-mobile )
         width 48px
         height 45px
         margin 0 auto
         background-size 50%
-      
-    
     
     &__top
       display block
@@ -152,7 +151,6 @@
         @media ( max-width $breakpoint-mobile )
           display none
         
-        
         &__icon
           position absolute
           top -45px
@@ -160,7 +158,7 @@
           display inline-block
           width 12px
           height 36px
-          background embedurl( 'img/info.png' ) no-repeat 0 0*/
+          background embedurl( 'img/heart.svg' ) no-repeat 0 0*/
 
   &-panel
     background-color #333
@@ -178,3 +176,30 @@
       
       @media ( max-width $breakpoint-mobile )
         display none
+
+.b-logo
+        
+  @media ( max-width $breakpoint-mobile )
+    display none
+  
+  &__title
+    display block
+    border-bottom 1px solid rgba( 255,255,255,0.1 )
+    padding 15px 0 11px
+  
+    img
+      ib()
+      margin 2px 0 5px
+    
+  &__slogan
+    ib()
+    font-size 10.5pt
+    line-height 42px
+    
+    @media ( max-width $breakpoint-tablet )
+      line-height normal
+      display block
+      margin-top 8px
+    
+    @media ( max-width $breakpoint-mobile )
+      display none
