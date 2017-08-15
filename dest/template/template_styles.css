@@ -846,10 +846,15 @@ ul li {
 @media (max-width: 575px) {
   .b-header {
     margin-top: 45px;
-    padding: 35px 20px;
+    padding: 35px 20px !important;
     min-height: 0;
     text-align: center;
   }
+}
+.b-header:after {
+  content: '';
+  clear: both;
+  display: table;
 }
 .b-phone {
   float: right;
@@ -858,8 +863,9 @@ ul li {
   font-size: 9pt;
   font-weight: 700;
   color: #e5241f !important;
+  width: 20%;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .b-phone {
     display: none;
   }
@@ -867,17 +873,29 @@ ul li {
 a.b-estate-logo {
   display: block;
   float: left;
-  margin: -5px 30px 0 0;
+  margin: -5px 0 0 0;
+  width: 15%;
+}
+@media (max-width: 767px) {
+  a.b-estate-logo {
+    width: 25%;
+  }
 }
 @media (max-width: 575px) {
   a.b-estate-logo {
     margin: 0 0 20px;
     float: none;
+    width: auto;
   }
 }
 .b-top-menu {
   float: left;
-  line-height: 42px;
+  width: 65%;
+  min-height: 42px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .b-top-menu a,
 .b-top-menu span {
@@ -888,10 +906,17 @@ a.b-estate-logo {
   display: inline-block;
   vertical-align: middle;
 }
+@media (max-width: 767px) {
+  .b-top-menu {
+    width: 75%;
+  }
+}
 @media (max-width: 575px) {
   .b-top-menu {
     float: none;
     line-height: 20px;
+    width: auto;
+    justify-content: center;
   }
 }
 .b-footer {
@@ -1288,6 +1313,7 @@ button.i-error {
   display: block;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   padding: 15px 0 11px;
+  text-align: center;
 }
 .b-logo__title img {
   display: inline-block;

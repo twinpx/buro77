@@ -34,9 +34,22 @@
 .b-estate__props .b-col-sm-4:nth-child(3n ) {
   background-image: none;
 }
-@media (max-width: 400px) {
+@media (max-width: 1199px) {
+  .b-estate__props .b-col-sm-4 {
+    width: 50%;
+    border-bottom: 1px solid #ececec;
+  }
+  .b-estate__props .b-col-sm-4:nth-child(3n ) {
+    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAOzs7AAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==") repeat-y right 0 #fff;
+  }
+  .b-estate__props .b-col-sm-4:nth-child(2n ) {
+    background-image: none;
+  }
+}
+@media (max-width: 767px) {
   .b-estate__props .b-col-sm-4 {
     border-bottom: 1px solid #ececec;
+    width: auto;
   }
 }
 .b-estate__props h5 {

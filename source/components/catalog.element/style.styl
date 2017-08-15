@@ -37,9 +37,20 @@ $breakpoint = 400px
       
       &:nth-child( 3n )
         background-image none
-      
-      @media( max-width $breakpoint )
+    
+      @media( max-width 1199px )
+        width 50%
         border-bottom 1px solid #ececec
+      
+        &:nth-child( 3n )
+          background embedurl( 'img/prop-border.gif' ) repeat-y right 0 #fff
+      
+        &:nth-child( 2n )
+          background-image none
+      
+      @media( max-width 767px )
+        border-bottom 1px solid #ececec
+        width auto
     
     h5
       margin 10px 0 10px 10px
