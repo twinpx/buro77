@@ -60,6 +60,9 @@
 
 .b-estate .fotorama__nav-wrap
   display none
+
+.b-estate .b-estate__plan .fotorama__nav-wrap
+  display block
   
 .fotorama
 
@@ -71,26 +74,26 @@
   .fotorama__arr--next
     background embedurl( 'img/right-arrow.svg' ) no-repeat center
     right 15px
+    mix-blend-mode difference
     
   .fotorama__arr--prev
     background embedurl( 'img/left-arrow.svg' ) no-repeat center
     left 15px
+    mix-blend-mode difference
     
   &--fullscreen .fotorama__fullscreen-icon
     width 32px
     height 32px
     background embedurl( 'img/close.svg' ) no-repeat center !important
     background-size cover
-    top 20px
-    right 20px
+    top 32px
+    right 32px
+    mix-blend-mode difference
     
-.fotorama--fullscreen .fotorama__img
-  width auto !important
-  height 70% !important
-  top 50% !important
-  left 50% !important
-  margin -20% 0 0 -30% !important
+.fotorama__fullscreen-icon
+  background embedurl( 'img/zoom.svg' ) no-repeat center !important
+  mix-blend-mode difference
   
-.fotorama--fullscreen .fotorama__stage,
-.fotorama--fullscreen
-  background rgba( 0,0,0,.5 ) !important
+.fotorama__fullscreen-icon
+  top 15px
+  right 15px
