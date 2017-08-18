@@ -30,6 +30,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   background: url("data:image/gif;base64,R0lGODlhAQABAIAAAOzs7AAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==") repeat-y right 0 #fff;
+  border-bottom: 1px solid #ececec;
+  height: 100px;
 }
 .b-estate__props .b-col-sm-4:nth-child(3n ) {
   background-image: none;

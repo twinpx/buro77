@@ -16,6 +16,12 @@
     
   a.b-logo__title
     margin-bottom 14px
+    display inline-block
+    vertical-align top
+    font-size 18pt
+    text-transform uppercase
+    margin-right 42px
+    line-height 55px
   
     &,
     &:hover,
@@ -23,12 +29,16 @@
       color #fff
       
   .b-phone
-    background-image embedurl( 'img/phone-footer.png' )
+    background embedurl( 'img/phone-footer.png' ) no-repeat 0 center
     color #fff !important
     float none
     text-align right
     ib()
-    margin-bottom 18px
+    line-height 55px
+    font-size 13.5pt
+    font-weight 700
+    padding-left 39px
+    width auto
   
   @media ( max-width $breakpoint-tablet )
     .b-logo__title
