@@ -77,8 +77,12 @@
 .fotorama__fullscreen-icon {
   background: url("data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMTIiIGRhdGEtbmFtZT0i0KHQu9C+0LkgMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE0NTEuMzQgMTQ1MS4zNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5vbmU7c3Ryb2tlOiM2OTRlOWM7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7c3Ryb2tlLXdpZHRoOjYwcHg7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT56b29tPC90aXRsZT48Y2lyY2xlIGNsYXNzPSJjbHMtMSIgY3g9IjU1OS40NCIgY3k9IjU1My40NiIgcj0iNDc4LjciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMjcuNSA1NTcuNjkpIHJvdGF0ZSgtNDUpIi8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMTM0NC45OSIgeTE9IjEzNDkuMDEiIHgyPSI4ODcuOTMiIHkyPSI4OTEuOTUiLz48L3N2Zz4=") no-repeat center !important;
   mix-blend-mode: difference;
+  top: 32px;
+  right: 32px;
 }
-.fotorama__fullscreen-icon {
-  top: 15px;
-  right: 15px;
+.b-catalog-gallery__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 66.67%;
 }

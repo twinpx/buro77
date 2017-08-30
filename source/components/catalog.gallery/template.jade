@@ -19,6 +19,8 @@ script( src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js" )
   - var n = 0
   while n < 9
     - n++
-    img( src="/upload/gallery/#{n}.jpg" alt="" itemprop="photo" )
+    div
+      .b-catalog-gallery__img( style="background-image: url(/upload/gallery/#{n}.jpg);" itemprop="photo" )
+      //-img( src="/upload/gallery/#{n}.jpg" alt="" itemprop="photo" )
 
 // end /components/catalog.gallery/
