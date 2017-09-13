@@ -4,8 +4,7 @@
   border none
   padding 20px 50px
   box-sizing( content-box )
-  min-height 42px
-  max-height 81px
+  min-height 81px
   box-sizing border-box
   
   a
@@ -19,6 +18,7 @@
     margin-top 45px
     padding 35px 20px !important
     min-height 0
+    max-height inherit
     text-align center
     
   &:after
@@ -50,7 +50,7 @@ a.b-estate-logo
   @media ( max-width $breakpoint-mobile )
     margin 0 0 20px
     float none
-    width auto
+    width auto !important
     
 .b-top-menu
   float left
