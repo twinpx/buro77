@@ -59,7 +59,8 @@ textarea
   
 
 
-button
+button,
+a.b-button
   background-color #669966
   color #fff
   border-width 0
@@ -72,6 +73,7 @@ button
   box-sizing( border-box )
   width 100%
   outline none
+  display inline-block
   
   &.i-theme
     &-a
@@ -80,29 +82,34 @@ button
       &:hover
         background-color #7db17d
       
-      
       &:active
         background-color #75c075
-      
-    
     
     &-b
       background-color #8877aa
     
-  
+    &-c
+      background-color #669966
+      text-transform uppercase
+      text-align center
+      width auto
+      padding 0 25px
+      font-size 9pt
+      line-height 44px
+      
+      &:hover,
+      &:active
+        color #fff
   
   &.i-disabled
     background-color #414141 !important
     color #5a5a5a !important
     cursor default
   
-  
   &.i-error
     background-color #604141 !important
     color #745353 !important
     cursor default
-  
-
 
 .b-form-message
   background embedurl("img/sent-icon.png") no-repeat 0 center

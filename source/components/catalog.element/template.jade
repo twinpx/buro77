@@ -4,146 +4,195 @@ link( rel="stylesheet", href="/components/catalog.element/style.css" )
 script( src="/components/catalog.element/script.js" )
 
 .b-estate( itemscope itemtype="http://schema.org/Residence" )
+
+  h1 Двухуровневая квартира общ. пл. 1040 кв.м., свободная планировка
+  
+  .b-estate__bar
+  
+    include ../../components/favorite/template
+    
+    a.b-address-link( href="#" target="_blank" )
+      span.b-address-link__text Россия, Москва, Молочный переулок, дом 3
+  
+  hr
   
   include ../../components/catalog.gallery/template
   
   hr
-  
-  #estateAbout.b-estate-about
-  
-    h1 Квартиры в I'M квартал
 
-    .b-row.b-estate__props
-    
-      .b-col-sm-4
-        img( src="/upload/estate-prop/1.png" width="100" height="100" alt="" )
-        h5( itemprop="amenityFeature" ) Собственный сад в голландском стиле Hyco Verhaagen.
-      
-      .b-col-sm-4
-        img( src="/upload/estate-prop/2.png" width="100" height="100" alt="" )
-        h5( itemprop="amenityFeature" ) Эксклюзивный дизайн AEDAS. 
-      
-      .b-col-sm-4
-        img( src="/upload/estate-prop/3.png" width="100" height="100" alt="" )
-        h5( itemprop="amenityFeature" ) Clubhouse — уникальный сервис для проведения деловых встреч.
-    
-    hr
-    
-    .description( itemprop="review" )
-    
-      h2 Квартиры и апартаменты в ЖК I’M
-      p Buro 77 представляет квартиры и апартаменты, а также коммерческие помещения в жилом комплексе I’M.
-      p I’M — элитный жилой квартал, расположен на Шлюзовой набережной, с видом на Московский международный Дом Музыки, Swissotel Красные Холмы и набережную Москвы-реки. Квартал состоит из двух элегантных 6-7-этажных строений.
-      p В жилом квартале предусмотрена просторная внутренняя территория площадью 1 гектар, где будет создан роскошный сад с зонами для активного и спокойного отдыха.
-      p Впервые в Москве жителям жилого квартала будет предложен уникальный сервис — Clubhouse, который будет включать в себя библиотеку, домашний кинотеатр, залы для проведения праздников, мероприятий и деловых встреч.
-      p Контроль доступа, система видеонаблюдения, круглосуточная консьерж-служба, охрана периметра комплекса, система видеодомофонов в квартирах и апартаментах.
+  button#toContactForm.i-theme-b Оставить заявку
   
   hr
   
-  #estateData.b-estate-data
+  .description
+    p В небольшой клубном доме напротив Зачатьевского монастыря в продажу предлагается просторная двухуровневая квартира на 2-м и 3-м этажах общей площадью 1040 кв.м.
+    p Из окон открываются чудесные виды на Храм и тихие переулки Остоженки. 
+    | Квартиру можно разделить как по вертикали, так и по горизонтали. 
+    | Минимальная площадь покупки - 260 кв.м. Есть возможность покупки как полностью 2 и 3 этажа, так и отдельно. Площади, соответственно по 520 м (этаж).
+    | Также, есть возможность приобрести машиноместа в подземном паркинге.
   
-    h2 Данные жилого комплекса I’M квартал
+  hr
 
-    table.b-data-table
-      colgroup
-        col.name
-        col.value
-      tbody
-        tr
-          th Год постройки (срок сдачи ГК, ввода в эксплуатацию)
-          td 2018
-        tr
-          th Инфраструктура района
-          td Инфраструктура квартала полностью соответствует классу объект и включает: медицинский центр, спа-салон, частный детский сад на 45 мест, кафе и другие сервисы.
-        tr
-          th Адрес
-          td( itemprop="address" ) Улица, дом
+  table.b-data-table
+    colgroup
+      col.name
+      col.value
+    thead
+      tr
+        th Параметр
+        th Значение
+    tbody
+      tr
+        th Район
+        td Остоженка
+      tr
+        th Метро
+        td Кропоткинская, Парк Культуры
   
   hr
-  
-  #estateProgress
-  
-    h2 Текущий этап строительства I’M квартал
-    
-    .b-estate-progressbar
-      .b-estate-progressbar__percent 70 %
 
-    .b-row.b-estate__props
-    
-      a.b-col-sm-4( href="" )
-        img( src="/upload/estate-prop/1.png" width="100" height="100" alt="" )
-        h5 Онлайн камера строительства ЖК i’M квартал.
-      
-      a.b-col-sm-4( href="" )
-        img( src="/upload/estate-prop/2.png" width="100" height="100" alt="" )
-        h5 Проектная декларация I'M.
-      
+  .b-estate__map
+    h2 Схема проезда
+    .i-border
+      script( type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=Wa3Q9dYruHRftSb8fWLAeirmyIIPq9wD&amp;width=100%&amp;height=450" )
+  
   hr
   
-  #estatePlan.b-estate__plan
+  table.b-table
+    thead
+      tr
+        th
+        th Лот
+        th Этаж
+        th Площадь
+        th Цена
+    tbody
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234452 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 195
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
+      tr( onclick="window.location.href='/estate/'" )
+        td
+          img( src="/upload/estates/1-small.jpg" width="50" height="50" alt="" )
+        td f2064
+        td 19
+        td 234 м<sup>2</sup>
+        td 5 000 000 руб.
   
-    h2 Планировки i’M квартал
-    
-    figure
-    
-      include ../../components/catalog.gallery/plan
-      
+  hr
+
+  a.b-download-panel( href="presentation.pdf" )
+    span.b-pdf-file
+      span.b-pdf-file__name
+        |Презентация объекта
+        br
+        span.small PDF 32 Мб
+        
   hr
   
-  #estatePrice.b-estate__price
+  .b-back-block
+  
+    h2
+      a( href="" ) I'M квартал
       
-    h2 Цены I'm квартал на Садовом
+    .b-back-block__image
+      a( href="" )
+        img( src="/upload/estates/im.jpg" width="200" height="200" alt="" )
+        
+    .b-back-block__table
     
-    table.b-table
-      thead
-        tr
-          th
-          th Лот
-          th Этаж
-          th Площадь
-          th Цена
-      tbody
-        tr(onclick="window.location.href='/objects/i-m-kvartal-na-sadovom/'")
-          td
-            img(src='https://buro77.ruhttps://buro77.ru/upload/iblock/f8e/f8efcb2d274546ad4ff4d2bc79055b5a.jpg', width='50', height='50')
-          td S148
-          td 1
-          td коммерческая 61,3 м²
-          td
-        tr(onclick="window.location.href='/objects/i-m-SC149/'")
-          td
-            img(src='https://buro77.ruhttps://buro77.ru/upload/iblock/f8e/f8efcb2d274546ad4ff4d2bc79055b5a.jpg', width='50', height='50')
-          td S149
-          td 1
-          td 81,1 м²
-          td
-        tr(onclick="window.location.href='/objects/i-m-SC150/'")
-          td
-            img(src='https://buro77.ruhttps://buro77.ru/upload/iblock/f8e/f8efcb2d274546ad4ff4d2bc79055b5a.jpg', width='50', height='50')
-          td S150
-          td 1
-          td 88,8 м²
-          td
-        tr(onclick="window.location.href='/objects/i-m-SC151/'")
-          td
-            img(src='https://buro77.ru/upload/iblock/f8e/f8efcb2d274546ad4ff4d2bc79055b5a.jpg', width='50', height='50')
-          td S151
-          td 1
-          td 130,2 м²
-          td
-        tr(onclick="window.location.href='/objects/i-m-SC152/'")
-          td
-            img(src='https://buro77.ru/upload/iblock/f8e/f8efcb2d274546ad4ff4d2bc79055b5a.jpg', width='50', height='50')
-          td S152
-          td 1
-          td 191,3 м²
-          td
-        tr(onclick="window.location.href='/objects/i-m-kvartal-na-sadovom-SF880/'")
-          td
-            img(src='https://buro77.ru/upload/iblock/f8e/f8efcb2d274546ad4ff4d2bc79055b5a.jpg', width='50', height='50')
-          td SF880
-          td 6
-          td 137,91 м²
-          td 64 701 166 ₽
+      table.b-data-table
+        colgroup
+          col.name
+          col.value
+        tbody
+          tr
+            th Год постройки (срок сдачи ГК, ввода в эксплуатацию)
+            td 2018
+          tr
+            th Метро
+            td Павелецкая
+          tr
+            th Район
+            td Замоскворечье
+          tr
+            th Количество квартир
+            td 388
+          tr
+            th Этажей
+            td 6-7
+          tr
+            th Паркинг
+            td Подземный
+            
+      hr
+            
+      a.b-button.i-theme-c( href="" ) ПОДРОБНЕЕ ОБ I’M квартал
   
 // end /components/catalog.element/

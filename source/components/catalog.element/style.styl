@@ -3,7 +3,6 @@
 $breakpoint = 400px
 
 .b-estate
-  margin-top -20px
 
   &__bar
     margin-bottom 23px
@@ -15,8 +14,11 @@ $breakpoint = 400px
       height 0
       visibility hidden
     
+    
     .b-favorite-icon
       float right
+    
+  
   
   &__props
     line-height $line-height-sm
@@ -24,68 +26,47 @@ $breakpoint = 400px
     margin-left: 0;
     
     @media( min-width $breakpoint )
+      border-top 1px solid $border-color
+      border-bottom 1px solid $border-color
       background embedurl( 'img/prop-border.gif' ) repeat-y 0 0
       font-size $font-size-bs
   
-    .b-col-sm-4
-      display flex
-      justify-content flex-start
-      align-items center
-      padding 0 15px 0 0
+    .b-col-xs-2
+      width: 20%;
+      text-align center
+      background embedurl( 'img/prop-border.gif' ) repeat-y right 0
+      padding 20px 10px
+      white-space nowrap
       overflow hidden
       text-overflow ellipsis
-      background embedurl( 'img/prop-border.gif' ) repeat-y right 0 #fff
-      border-bottom 1px solid #ececec
-      height 100px
       
-      &:nth-child( 3n )
-        background-image none
-    
-      @media( max-width 1199px )
-        width 50%
-        border-bottom 1px solid #ececec
-      
-        &:nth-child( 3n )
-          background embedurl( 'img/prop-border.gif' ) repeat-y right 0 #fff
-      
-        &:nth-child( 2n )
-          background-image none
-      
-      @media( max-width 767px )
-        border-bottom 1px solid #ececec
-        width auto
+      @media( max-width $breakpoint )
+        background none
+        float none
+        width 100%
+        text-align left
+        padding 10px 0
+        white-space normal
     
     h5
-      margin 10px 0 10px 10px
-      font-size 9pt
+      margin 0 0 5px
+      
+      @media( min-width $breakpoint )
+        margin 0 0 20px
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
   
   &__plan
   
     figure
-      background #fff
+      background #f7f7f7
       padding 30px
       margin 0
       text-align center
       
       img
-        width 100%
-    
-  &-progressbar
-    background-color #3b88be
-    margin-bottom 5px
-    
-    &__percent
-      background-color #b19f83
-      width 0
-      height 33px
-      color #fff
-      font-size 9pt
-      line-height 33px
-      text-align right
-      padding-right 16px
-      box-sizing border-box
-      transition( width 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) )
-      
+        max-width 100%
 
 #estateMap
   height 470px
@@ -94,3 +75,30 @@ $breakpoint = 400px
   @media( max-width $breakpoint-mobile )
     height 300px
   
+.b-back-block
+
+  h2
+    
+    a
+      
+      &:hover 
+        text-decoration underline
+        opacity 0.7
+  
+  &__image
+    float left
+    width 200px
+    
+    @media( max-width: 800px )
+      float none
+      margin-bottom 30px
+    
+    a
+      display block
+      
+  &__table
+    margin-left 240px
+    
+    @media( max-width: 800px )
+      margin-left 0
+    

@@ -1080,7 +1080,8 @@ textarea {
 .i-has-error textarea {
   border-color: #f66;
 }
-button {
+button,
+a.b-button {
   background-color: #696;
   color: #fff;
   border-width: 0;
@@ -1097,25 +1098,48 @@ button {
   box-sizing: border-box;
   width: 100%;
   outline: none;
+  display: inline-block;
 }
-button.i-theme-a {
+button.i-theme-a,
+a.b-button.i-theme-a {
   background-color: #696;
 }
-button.i-theme-a:hover {
+button.i-theme-a:hover,
+a.b-button.i-theme-a:hover {
   background-color: #7db17d;
 }
-button.i-theme-a:active {
+button.i-theme-a:active,
+a.b-button.i-theme-a:active {
   background-color: #75c075;
 }
-button.i-theme-b {
+button.i-theme-b,
+a.b-button.i-theme-b {
   background-color: #87a;
 }
-button.i-disabled {
+button.i-theme-c,
+a.b-button.i-theme-c {
+  background-color: #696;
+  text-transform: uppercase;
+  text-align: center;
+  width: auto;
+  padding: 0 25px;
+  font-size: 9pt;
+  line-height: 44px;
+}
+button.i-theme-c:hover,
+a.b-button.i-theme-c:hover,
+button.i-theme-c:active,
+a.b-button.i-theme-c:active {
+  color: #fff;
+}
+button.i-disabled,
+a.b-button.i-disabled {
   background-color: #414141 !important;
   color: #5a5a5a !important;
   cursor: default;
 }
-button.i-error {
+button.i-error,
+a.b-button.i-error {
   background-color: #604141 !important;
   color: #745353 !important;
   cursor: default;
