@@ -532,7 +532,7 @@ b {
   font-weight: 700;
 }
 p {
-  margin: 0;
+  margin: 15px 0;
 }
 h1,
 h2,
@@ -829,14 +829,15 @@ ul li {
   background-color: #ececec;
   color: #333;
   border: none;
-  padding: 20px 50px 5px 177px;
+  padding: 20px 50px;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   min-height: 42px;
-}
-.b-block-b.i-reverse .b-header {
-  padding-left: 50px;
+  max-height: 81px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .b-header a,
 .b-header a:hover,
@@ -862,7 +863,7 @@ ul li {
   text-align: right;
   font-size: 9pt;
   font-weight: 700;
-  color: #e5241f !important;
+  color: #333 !important;
   width: 20%;
 }
 @media (max-width: 767px) {
