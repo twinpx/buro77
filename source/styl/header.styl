@@ -6,6 +6,25 @@
   box-sizing( content-box )
   min-height 81px
   box-sizing border-box
+
+  &__fixed
+    background-color $header-bg
+    padding 20px 50px
+    min-height 81px
+    box-sizing border-box
+    position fixed
+    top 0
+    left 127px
+    width calc(100% - 220px - 127px)
+    z-index 106
+    
+    @media( max-width 980px )
+      width calc(100% - 127px)
+    
+    @media( max-width $breakpoint-mobile )
+      position static
+      width auto
+      padding 0
   
   a
     

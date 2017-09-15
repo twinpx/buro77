@@ -33,7 +33,7 @@
             if (!$("#bx-panel").length) {
                 return;
             }
-            $(".b-side-icons").css({
+            $(".b-side-icons, .b-header__fixed").css({
                 top: $("#bx-panel").height() + "px"
             });
             $(".b-side-bar__content").css({
@@ -41,7 +41,7 @@
             });
             $("#bx-panel-expander, #bx-panel-hider").bind("click", function() {
                 setTimeout(function() {
-                    $(".b-side-icons").css({
+                    $(".b-side-icons, .b-header__fixed").css({
                         top: $("#bx-panel").height() + "px"
                     });
                     $(".b-side-bar__content").css({

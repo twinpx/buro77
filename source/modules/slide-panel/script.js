@@ -3,13 +3,12 @@ function sideBarCss() {
     return;
   }
   
-  $( '.b-side-icons' ).css({ top: $( '#bx-panel' ).height() + 'px' });
+  $( '.b-side-icons, .b-header__fixed' ).css({ top: $( '#bx-panel' ).height() + 'px' });
   $( '.b-side-bar__content' ).css({ paddingTop: $( '#bx-panel' ).height() + 'px' });
   
   $( '#bx-panel-expander, #bx-panel-hider' ).bind( 'click', function () {
-  
     setTimeout( function() {
-      $( '.b-side-icons' ).css({ top: $( '#bx-panel' ).height() + 'px' });
+      $( '.b-side-icons, .b-header__fixed' ).css({ top: $( '#bx-panel' ).height() + 'px' });
       $( '.b-side-bar__content' ).css({ paddingTop: $( '#bx-panel' ).height() + 'px' });
     }, 0);
     
