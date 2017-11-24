@@ -84,6 +84,42 @@
                 }
             });
         }
+        function sideSearch() {
+            var $bar = $("#sideSearch");
+            var $button = $("#sideSearchButton");
+            $button.click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $bar.toggleClass("i-open");
+                $(".b-side__search .form-control").val("").focus();
+                $(".b-side__search__result").show();
+            });
+            $(document).on("click", function(e) {
+                if ($(e.target).is(".clip img")) {
+                    return;
+                }
+                $bar.removeClass("i-open");
+            });
+            $bar.on("click", function(e) {
+                e.stopPropagation();
+            }).on("swiperight", function() {
+                if (window.matchMedia("(min-width: 521px)").matches) {
+                    $bar.addClass("i-open");
+                }
+            }).on("swipeleft", function() {
+                if (window.matchMedia("(min-width: 521px)").matches) {
+                    $bar.removeClass("i-open");
+                }
+            }).on("swipedown", function() {
+                if (window.matchMedia("(max-width: 520px)").matches) {
+                    $bar.addClass("i-open");
+                }
+            }).on("swipeup", function() {
+                if (window.matchMedia("(max-width: 520px)").matches) {
+                    $bar.removeClass("i-open");
+                }
+            });
+        }
         function sideBarTopButton() {
             $("#sideBarTop").click(function(e) {
                 e.preventDefault();
@@ -98,9 +134,24 @@
                 }
             });
         }
+        $(".b-side__search .form-control").keyup(function() {
+            if ($(this).val() !== "") {
+                $(".b-side__search__close").show();
+                $(".b-side__search__result").hide();
+            }
+        });
+        $(".b-side__search__close").click(function() {
+            var $input = $(".b-side__search .form-control");
+            if ($input.val() !== "") {
+                $input.val("").focus();
+            } else {
+                $("#sideSearchButton").click();
+            }
+        });
         sideBarCss();
         sideBarTopButton();
         sideBar();
+        sideSearch();
     });
 })(jQuery);
 

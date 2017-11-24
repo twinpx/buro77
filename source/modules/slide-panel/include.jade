@@ -12,6 +12,33 @@
     
     a.b-favorites-link( href="/favorites/" )
       span.b-favorites-link__num 15
+    
+    a#sideSearchButton.b-side-bar__search( href="#sideSearch" )
+    
+  #sideSearch.b-side-search
+    
+    .b-side-search__content
+    
+      .b-side__search-wrapper
+        .b-side__search
+          form.form-inline( action="" method="GET" )
+            .form-group
+              label.b-search-icon( for="title-search-input" style="background-image: url(/template/images/icons/search-icon-zoom.svg)" )
+              input#title-search-input.form-control( type="search" placeholder="Я ищу (лот, название дома, район, цена, площадь)..." value="" )
+              .b-side__search__close
+        
+        .b-side__search__result
+          .b-side__search__result__header Быстрые ссылки
+          div
+            a( href="" ) Mezaparka Rezidences
+          div
+            a( href="" ) Сареево 15
+          div
+            a( href="" ) CAPITAL TOWERS
+          div
+            a( href="" ) ОКО
+      
+      include ../../components/search-title/template
   
   #sideBar.b-side-bar
     

@@ -3,6 +3,7 @@
     $(function() {
         var $filter = $("#estateFilter");
         $filter.delegate(".b-estate-filter__button button", "click", function() {
+            $filter.addClass("i-preloader");
             $.ajax({
                 url: "/json/send.php",
                 type: "GET",
