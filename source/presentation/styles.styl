@@ -2,23 +2,25 @@ html,
 body
   margin 0
   padding 0
-  overflow-x hidden
+  overflow hidden
 
 section
-  width 100vw
-  height 100vh
-  font-family "Open Sans", Arial, sans-serif
-  font-size 10.5pt
+  width 1022px
+  height 700px
+  font-family Arial, sans-serif
+  font-size 9pt
   box-sizing border-box
   
   p
     margin 15px 0
-    font-size 8pt
+    font-size 10.5pt
+    line-height 1.7
   
 #page1
   overflow hidden
   background url( images/bg1-1.jpg ) no-repeat center
   background-size cover
+  position relative
   
   .b-bg
     display none
@@ -71,28 +73,91 @@ section
       color #fff
       
 .b-page
-  padding 20px 58px
+  position relative
+  clear both
 
   &__head
     overflow hidden
-    margin-bottom 22px
+    margin-bottom 34px
+    
+    &:after
+      content ''
+      display block
+      clear both
     
   &__logo
     float left
+    width 30%
+    
+    img
+      vertical-align top
     
   &__img
     float left
     margin-right 20px
     
-  &__slogan
+  /*&__slogan
     float left
-    font-size 8pt
+    font-size 8pt*/
+    
+  &__contacts
+    float left
+    font-size 9pt
+    //font-weight bold
+    text-align right
+    margin-top 20px
     
   &__address
     float right
-    font-size 10.5pt
-    font-weight bold
+    font-size 9pt
+    //font-weight bold
     text-align right
+    margin-top 3px
+    
+  &__left-images
+    float left
+    width 50%
+    
+    img
+      width 100%
+      vertical-align top
+      
+      &:first-child
+        margin-bottom 20px
+      
+  &__right-text
+    float right
+    width 50%
+    padding-left 60px
+    box-sizing border-box
+    padding-bottom 30px
+    
+    .b-page__head
+      margin-bottom 44px
+    
+      &.i-footer
+        position absolute
+        bottom 20px
+        right 20px
+        width 50%
+        padding-left 80px
+        margin-bottom 0
+        box-sizing border-box
+        
+        .b-page__address
+          margin-top 0
+      
+    .b-page__address
+      margin-top 20px
+    
+    h2
+      font-size 17pt
+      font-weight normal
+      margin-bottom 35px
+      padding-right 40px
+      
+    p
+      padding-right 40px
     
   &__left-column
     float left
@@ -102,10 +167,92 @@ section
     img
       width 100%
       height auto
+      
+  &__props1
+    margin-bottom 35px
+    
+    &__item
+      margin-bottom 3px
+      
+      &:after
+        content ''
+        display block
+        clear both
+      
+    img
+      margin-right 12px
+      float left
+      width 24px
+      height 24px
+      
+    &__text
+      float left
+      width 413px
+      margin-top 3px
+      
+  &__body__ill img
+    vertical-align top
   
   &__right-column
     float left
     width 35%
+    
+  &__row
+    
+    &:after
+      content ''
+      clear both
+      display block
+      
+  &__left-props
+    float left
+    width 45%
+    box-sizing border-box
+    padding-right 20px
+      
+  &__right-props
+    float left
+    width 55%
+      
+  &__props2
+    
+    &__item
+      margin-bottom 25px
+      
+      &:after
+        content ''
+        display block
+        clear both
+        
+      b,
+      span
+        font-size 12pt
+      
+    img
+      margin-right 12px
+      float left
+      width 24px
+      height 24px
+      
+    &__text
+      float left
+      width 145px
+      
+    h6
+      margin 0 0 5px
+      
+  &__ills
+    
+    &__item
+      
+      img
+        vertical-align top
+        margin 0
+        
+    &__sep
+      text-align center
+      font-size 9pt
+      padding 7px 0
     
   dl
     font-size 8pt

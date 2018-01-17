@@ -2,23 +2,25 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 section {
-  width: 100vw;
-  height: 100vh;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 10.5pt;
+  width: 1022px;
+  height: 700px;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
   box-sizing: border-box;
 }
 section p {
   margin: 15px 0;
-  font-size: 8pt;
+  font-size: 10.5pt;
+  line-height: 1.7;
 }
 #page1 {
   overflow: hidden;
   background: url("images/bg1-1.jpg") no-repeat center;
   background-size: cover;
+  position: relative;
 }
 #page1 .b-bg {
   display: none;
@@ -71,28 +73,88 @@ section p {
   color: #fff;
 }
 .b-page {
-  padding: 20px 58px;
+  position: relative;
+  clear: both;
+/*&__slogan
+    float left
+    font-size 8pt*/
 }
 .b-page__head {
   overflow: hidden;
-  margin-bottom: 22px;
+  margin-bottom: 34px;
+}
+.b-page__head:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 .b-page__logo {
   float: left;
+  width: 30%;
+}
+.b-page__logo img {
+  vertical-align: top;
 }
 .b-page__img {
   float: left;
   margin-right: 20px;
 }
-.b-page__slogan {
+.b-page__contacts {
   float: left;
-  font-size: 8pt;
+  font-size: 9pt;
+  text-align: right;
+  margin-top: 20px;
 }
 .b-page__address {
   float: right;
-  font-size: 10.5pt;
-  font-weight: bold;
+  font-size: 9pt;
   text-align: right;
+  margin-top: 3px;
+}
+.b-page__left-images {
+  float: left;
+  width: 50%;
+}
+.b-page__left-images img {
+  width: 100%;
+  vertical-align: top;
+}
+.b-page__left-images img:first-child {
+  margin-bottom: 20px;
+}
+.b-page__right-text {
+  float: right;
+  width: 50%;
+  padding-left: 60px;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+}
+.b-page__right-text .b-page__head {
+  margin-bottom: 44px;
+}
+.b-page__right-text .b-page__head.i-footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50%;
+  padding-left: 80px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+.b-page__right-text .b-page__head.i-footer .b-page__address {
+  margin-top: 0;
+}
+.b-page__right-text .b-page__address {
+  margin-top: 20px;
+}
+.b-page__right-text h2 {
+  font-size: 17pt;
+  font-weight: normal;
+  margin-bottom: 35px;
+  padding-right: 40px;
+}
+.b-page__right-text p {
+  padding-right: 40px;
 }
 .b-page__left-column {
   float: left;
@@ -103,9 +165,83 @@ section p {
   width: 100%;
   height: auto;
 }
+.b-page__props1 {
+  margin-bottom: 35px;
+}
+.b-page__props1__item {
+  margin-bottom: 3px;
+}
+.b-page__props1__item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.b-page__props1 img {
+  margin-right: 12px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+.b-page__props1__text {
+  float: left;
+  width: 413px;
+  margin-top: 3px;
+}
+.b-page__body__ill img {
+  vertical-align: top;
+}
 .b-page__right-column {
   float: left;
   width: 35%;
+}
+.b-page__row:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.b-page__left-props {
+  float: left;
+  width: 45%;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.b-page__right-props {
+  float: left;
+  width: 55%;
+}
+.b-page__props2__item {
+  margin-bottom: 25px;
+}
+.b-page__props2__item:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.b-page__props2__item b,
+.b-page__props2__item span {
+  font-size: 12pt;
+}
+.b-page__props2 img {
+  margin-right: 12px;
+  float: left;
+  width: 24px;
+  height: 24px;
+}
+.b-page__props2__text {
+  float: left;
+  width: 145px;
+}
+.b-page__props2 h6 {
+  margin: 0 0 5px;
+}
+.b-page__ills__item img {
+  vertical-align: top;
+  margin: 0;
+}
+.b-page__ills__sep {
+  text-align: center;
+  font-size: 9pt;
+  padding: 7px 0;
 }
 .b-page dl {
   font-size: 8pt;

@@ -19,7 +19,7 @@ a
   &:hover,
   &:active,
   &:focus
-    color #33ccff
+    opacity .7
   
 b
   font-weight 700
@@ -59,6 +59,9 @@ hr
   
   &.i-size-S
     margin 10px 0
+    
+  &.i-line
+    border-top 1px solid #e0dddd
 
 ul, ol
   margin 20px 0 20px 27px
@@ -86,6 +89,26 @@ ul
     &:active,
     &:focus
       color $link-color
+      
+.b-page-content
+  padding 40px 50px
+  color #fff
+  max-width 720px
+  
+  @media( max-width $breakpoint-mobile )
+    padding 20px
+    
+  a
+    color #fff
+    text-decoration underline
+    
+    &:hover,
+    &:active,
+    &:focus
+      opacity .7
+      
+  h1:last-child
+    margin-bottom 0
       
 .small
   font-size $font-size-xs
@@ -245,7 +268,7 @@ ul
   
 .b-favorites-link
   display block
-  width 37px
+  width 35px
   height 35px
   background embedurl("img/heart.svg") no-repeat 0 0
   position relative
@@ -293,3 +316,9 @@ ul
   @media ( max-width 520px)
     margin-right -20px
     margin-left -20px
+    
+.visible-xs-block
+  display none
+  
+  @media ( max-width $breakpoint-mobile )
+    display block !important

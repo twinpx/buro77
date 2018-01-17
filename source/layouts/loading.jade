@@ -1,0 +1,21 @@
+﻿doctype html
+html( lang="ru" )
+  head
+    block title
+      title Buro77
+      
+    include includes/meta.jade
+    include includes/styles.jade
+    include includes/scripts.jade
+    
+  body
+    include ../modules/slide-panel/include.jade
+    
+    section.b-page-container
+    
+      include includes/header-loading.jade
+    
+      block content
+        h1 Loading page
+        
+      include includes/footer
