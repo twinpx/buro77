@@ -48,6 +48,7 @@
         $filter.addClass( 'i-preloader' );
         $( '.b-estate-filter__menu2' ).slideUp();
         $( '.b-estate-filter__menu3' ).slideUp();
+        $( '.b-estate-filter__number' ).slideDown();
         
         $.ajax({
           url: '/json/step1.php',

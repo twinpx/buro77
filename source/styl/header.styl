@@ -2,14 +2,23 @@
   background-color $header-bg
   color #333
   border none
-  padding 20px 50px
+  padding 15px 50px 16px
   box-sizing( content-box )
   min-height 81px
   box-sizing border-box
+  display flex
+  justify-content space-between
+    
+  @media( max-width $breakpoint-mobile )
+    width auto
+    display block
+  
+  .b-block-b &
+    max-width 1024px
 
   &__fixed
     background-color $header-bg
-    padding 20px 50px
+    padding 15px 50px 16px
     min-height 81px
     box-sizing border-box
     position fixed
@@ -17,6 +26,17 @@
     left 127px
     width calc(100% - 220px - 127px)
     z-index 106
+  
+    .b-block-b &
+      width 1024px
+    
+      @media( max-width 1151px )
+        width calc(100% - 127px)
+        max-width none
+    
+      @media( max-width $breakpoint-mobile )
+        width auto
+        display block
     
     @media( max-width 980px )
       width calc(100% - 127px)
@@ -40,40 +60,43 @@
     max-height inherit
     text-align center
     
-  &:after
-    content ''
-    clear both
-    display table
-    
 .b-phone
   float right
+  max-width 15%
   line-height 42px
   text-align right
   font-size 9pt
   font-weight 700
   color #333 !important
-  width 20%
+  white-space nowrap
+  margin-left 40px
     
   @media ( max-width 767px )
     display none
+    margin-left 0
     
 a.b-estate-logo
   display block
+  margin 0 40px 0 0
   float left
-  margin -5px 0 0 0
-  width 15%
-  
-  @media ( max-width 767px )
-    width 25%
-  
+  max-width calc( 20% - 40px )
+    
   @media ( max-width $breakpoint-mobile )
     margin 0 0 20px
     float none
     width auto !important
+    max-width inherit
+    
+  img
+  
+    @media ( min-width $breakpoint-mobile+1 ) and ( max-width 831px )
+      max-width 100px !important
+      height auto !important
+    
     
 .b-top-menu
   float left
-  width 65%
+  max-width 60%
   min-height 42px
   display flex
   justify-content flex-start
@@ -101,4 +124,5 @@ a.b-estate-logo
     float none
     line-height 20px
     width auto
+    max-width inherit
     justify-content center

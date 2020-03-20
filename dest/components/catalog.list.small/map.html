@@ -1,0 +1,18 @@
+
+<!-- start /components/catalog.list.small/-->
+<link rel="stylesheet" href="/components/catalog.list.small/style.css"/>
+<script src="/components/catalog.list.small/script.js"></script>
+<div class="b-catalog-list-small i-map"> 
+  <div class="b-el-small__map-heading">
+    <h3>Объекты на карте</h3>
+  </div>
+  <script>
+    window.listSmallMapLat = 55;
+    window.listSmallMapLng = 37;
+    window.listSmallMapZoom = 12;
+  </script>
+  <div id="elSmallMap" data-ajax-url="/components/catalog.list.small/markers-no-current.json" data-ajax-method="GET"></div>
+  <div id="infoWindow"></div>
+</div>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<!-- end /components/catalog.list.small/-->

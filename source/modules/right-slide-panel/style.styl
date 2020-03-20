@@ -1,0 +1,194 @@
+@import '../../styl/component-include.styl'
+
+.b-right-slide-panel
+  position relative
+  color #fff
+  z-index 111
+  
+  button,
+  &-link,
+  &-close
+  
+    &:hover
+      opacity .7
+      transition( all 0.5s ease )
+  
+  @media ( min-width 1300px )
+  
+    &-bar
+      position fixed
+      top 0
+      right 0
+      width 400px
+      height 100%
+      transform( translate(450px, 0))
+      transition( all 0.5s ease )
+      z-index 112
+      
+      &.i-open
+        transform( translate(50px, 0))
+      
+    &__transform
+      position absolute
+      top 0
+      right 0
+      width 100%
+      height 100%
+      transform matrix( 1, 0, -.05, 1, 0, 0)
+      overflow hidden
+          
+    &-bg
+      position absolute
+      top 0
+      right 0
+      width 110%
+      height 100%
+      background-repeat no-repeat
+      background-position left top
+      background-size cover
+      transform matrix( 1, 0, .05, 1, 0, 0)
+      z-index 10
+      
+    &-shutter
+      background-color rgba( 51,51,51,.8)
+      width 100%
+      height 100%
+      
+    &__content
+      display flex
+      align-items center
+      justify-content center
+      text-align center
+      position absolute
+      top 0
+      right 0
+      width 100%
+      height 100%
+      padding 30px 80px 30px 30px
+      box-sizing border-box
+      z-index 11
+      
+    &__title
+      font-size 21pt
+      line-height 1.3
+      
+    &-button
+      margin-top 40px
+      margin-bottom 30px
+      
+      button
+        width 220px
+        margin 0 auto
+      
+    &-link
+      color #cccccc
+      text-decoration underline
+
+    &-close
+      width 24px
+      height 24px
+      background url( '/template/images/icons/close-icon-white.svg' ) no-repeat center
+      background-size cover
+      cursor pointer
+      position absolute
+      top 25px
+      right 75px
+      
+  @media ( max-width 1299px )
+  
+    &-bar
+      position fixed
+      top 0
+      left 0
+      width 100%
+      height 280px
+      transform( translate(0, -280px))
+      transition( all 0.5s ease )
+      z-index 112
+      
+      &.i-open
+        transform( translate(0,0))
+      
+    &__transform
+      position absolute
+      top 0
+      right 0
+      width 100%
+      height 100%
+          
+    &-bg
+      position absolute
+      top 0
+      right 0
+      width 100%
+      height 100%
+      background-repeat no-repeat
+      background-position left top
+      background-size cover
+      z-index 10
+      
+    &-shutter
+      background-color rgba( 51,51,51,.8)
+      width 100%
+      height 100%
+      
+    &__content
+      display flex
+      align-items center
+      justify-content center
+      position absolute
+      top 0
+      right 0
+      width 100%
+      height 100%
+      z-index 11
+      
+      &-item
+        max-width 1020px
+        padding 10px 25px 20px
+        box-sizing border-box
+      
+    &__title
+      font-size 21pt
+      line-height 1.3
+      
+    &-button
+      display inline-block
+      width 220px
+      margin-right 80px
+      
+      button
+        width 220px
+      
+    &-link
+      color #cccccc
+      text-decoration underline
+
+    &-close
+      width 24px
+      height 24px
+      background url( '/template/images/icons/close-icon-white.svg' ) no-repeat center
+      background-size cover
+      cursor pointer
+      position absolute
+      top 25px
+      right 25px
+      
+  @media ( max-width 767px )
+  
+    &-bar
+      height 380px
+      transform( translate(0, -380px))
+            
+    &-button
+      display block
+      margin-right 0
+      margin-bottom 15px
+      
+    &-link
+      color #cccccc
+      text-decoration underline
+
+    &-close
+      top 15px
+      right 15px

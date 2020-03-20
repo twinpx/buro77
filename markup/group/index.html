@@ -7,9 +7,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/template/template_styles.css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300italic,400italic,700italic,400,300,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="/template/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="/template/jscript.js"></script>
   </head>
   <body>
@@ -131,32 +133,50 @@
         </div>
       </div>
     </div>
+    <div class="b-right-slide-panel">
+      <!--data-action="mouseMove || pageLoad"-->
+      <div id="rightSlidePanel" data-time="3000" data-close-time="1000" data-action="mouseMove" class="b-right-slide-panel-bar">
+        <div class="b-right-slide-panel__transform">
+          <div style="background-image: url( '/template/images/right-slide-panel-bg.jpg' );" class="b-right-slide-panel-bg">
+            <div class="b-right-slide-panel-shutter"></div>
+          </div>
+        </div>
+        <div class="b-right-slide-panel__content">
+          <div class="b-right-slide-panel__content-item">
+            <div class="b-right-slide-panel-close"></div>
+            <div class="b-right-slide-panel__title">Лучше увидеть самому</div>
+            <p>Закажите клиентский тур и свои глазами оцените возможности жилого комплекса «Вишневый сад».<br>Закажите бесплатный звонок и мы свяжемся с вами в течение минуты.</p>
+            <div class="b-right-slide-panel-button">
+              <button class="i-theme-d">Заказать звонок</button>
+            </div><a href="#" class="b-right-slide-panel-link">Спасибо, чуть позже</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="b-page-container">
       <div class="b-grid-e">
         <div class="b-block-a i-reverse">
           <!-- start /components/catalog.list.small/-->
           <link rel="stylesheet" href="/components/catalog.list.small/style.css">
           <script src="/components/catalog.list.small/script.js"></script>
-          <div class="b-el-small">
-            <div class="b-el-small__wrapper">
-              <!--span.b-el-small__i
-              img.b-el-small__i__img-bw( src="/upload/estates/2-bw.jpg" alt="" )
-              img.b-el-small__i__img( src="/upload/estates/2.jpg" alt="" )
-              span.b-el-small__i__shutter
-              span.b-el-small__i__props
-                span F1008
-                |213 м<sup>2</sup>
-                br
-                |7 800 000 руб.
-              
-              --><a href="/estate/" class="b-el-small__i"><img src="/upload/estates/3-bw.jpg" alt="" class="b-el-small__i__img-bw"><img src="/upload/estates/3.jpg" alt="" class="b-el-small__i__img"><span class="b-el-small__i__shutter"></span><span class="b-el-small__i__props"><span>F1008</span>213 м<sup>2</sup><br>7 800 000 руб.</span></a><a href="/estate/" class="b-el-small__i"><img src="/upload/estates/3-bw.jpg" alt="" class="b-el-small__i__img-bw"><img src="/upload/estates/3.jpg" alt="" class="b-el-small__i__img"><span class="b-el-small__i__shutter"></span><span class="b-el-small__i__props"><span>F1008</span>213 м<sup>2</sup><br>7 800 000 руб.</span></a><a href="/estate/" class="b-el-small__i"><img src="/upload/estates/3-bw.jpg" alt="" class="b-el-small__i__img-bw"><img src="/upload/estates/3.jpg" alt="" class="b-el-small__i__img"><span class="b-el-small__i__shutter"></span><span class="b-el-small__i__props"><span>F1008</span>213 м<sup>2</sup><br>7 800 000 руб.</span></a><a href="/estate/" class="b-el-small__i"><img src="/upload/estates/3-bw.jpg" alt="" class="b-el-small__i__img-bw"><img src="/upload/estates/3.jpg" alt="" class="b-el-small__i__img"><span class="b-el-small__i__shutter"></span><span class="b-el-small__i__props"><span>F1008</span>213 м<sup>2</sup><br>7 800 000 руб.</span></a><a href="/estate/" class="b-el-small__i"><img src="/upload/estates/3-bw.jpg" alt="" class="b-el-small__i__img-bw"><img src="/upload/estates/3.jpg" alt="" class="b-el-small__i__img"><span class="b-el-small__i__shutter"></span><span class="b-el-small__i__props"><span>F1008</span>213 м<sup>2</sup><br>7 800 000 руб.</span></a>
-            </div>
+          <div class="b-el-small__menu"><a href="#map" data-href="map">На карте</a><a href="#list" data-href="list">Списком</a></div>
+          <div data-tab="el-map">
+            <script>
+              window.listSmallMapLat = 55;
+              window.listSmallMapLng = 37;
+              window.listSmallMapZoom = 12;
+            </script>
+            <div id="elSmallMap" data-ajax-url="/components/catalog.list.small/markers.json" data-ajax-method="GET"></div>
+            <div id="infoWindow"></div>
           </div>
+          <div data-tab="el-list" data-ajax-url="/components/catalog.list.small/list.html" data-ajax-method="GET" class="b-el-small"></div>
+          <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js" async defer></script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIBtmSOttEUoOM-fuV3gEtf_kGoZhm-YE&amp;callback=initMap" async defer></script>
           <!-- end /components/catalog.list.small/-->
         </div>
         <div class="b-block-b i-reverse">
           <header class="b-header">
-            <div class="b-header__fixed"><a href="" class="b-estate-logo"><img src="/upload/estate-logo/1.png" width="55" height="42" alt=""></a>
+            <div class="b-header__fixed"><a href="" class="b-estate-logo"><img src="/upload/estate-logo/2.png" width="150" height="50" alt=""></a>
               <div class="b-top-menu"><a href="#estateAbout">I'M квартал</a><a href="#estateData">данные проекта</a><a href="#estateProgress">этап строительства</a><a href="#estatePlan">планировка</a><a href="#estatePrice">цены</a><a href="#estateHypothec">ипотека</a></div>
               <div class="b-phone">+7 499 999 34 45</div>
             </div>
@@ -166,6 +186,59 @@
             <link rel="stylesheet" href="/components/catalog.group/style.css">
             <script src="/components/catalog.group/script.js"></script>
             <div itemscope itemtype="http://schema.org/Residence" class="b-estate">
+              <h1>Квартиры в I'M квартал</h1>
+              <div class="b-estate__bar">
+                <!-- start /components/favorite/-->
+                <link rel="stylesheet" href="/components/favorite/style.css">
+                <script src="/components/favorite/script.js"></script><a href="/components/favorite/send.json?id=456" title="Добавить в избранное" class="b-favorite-icon"></a><a href="/components/favorite/send.json?id=456" title="Убрать из избранного" class="b-favorite-icon i-on"></a>
+                <!-- end /components/favorite/--><a href="#" target="_blank" class="b-address-link"><span class="b-address-link__text">Россия, Москва, Молочный переулок, дом 3</span></a>
+              </div>
+              <hr class="i-line">
+              <div class="b-estate__props">
+                <div class="b-estate__props-item">
+                  <div style="background-image: url( '/upload/icons/estate-props.gif' );" class="b-estate__props__icon"></div>
+                  <div class="b-estate__props__text">
+                    <h6>Лот</h6>
+                    <div>SA681</div>
+                  </div>
+                </div>
+                <div class="b-estate__props-item">
+                  <div style="background-image: url( '/upload/icons/estate-props.gif' );" class="b-estate__props__icon"></div>
+                  <div class="b-estate__props__text">
+                    <h6>Площадь</h6>
+                    <div>60,4 м<sup>2</sup></div>
+                  </div>
+                </div>
+                <div class="b-estate__props-item">
+                  <div style="background-image: url( '/upload/icons/estate-props.gif' );" class="b-estate__props__icon"></div>
+                  <div class="b-estate__props__text">
+                    <h6>Этаж</h6>
+                    <div>8</div>
+                  </div>
+                </div>
+                <div class="b-estate__props-item">
+                  <div style="background-image: url( '/upload/icons/estate-props.gif' );" class="b-estate__props__icon"></div>
+                  <div class="b-estate__props__text">
+                    <h6>Метро</h6>
+                    <div>Проспект-Вернадского</div>
+                  </div>
+                </div>
+                <div class="b-estate__props-item">
+                  <div style="background-image: url( '/upload/icons/estate-props.gif' );" class="b-estate__props__icon"></div>
+                  <div class="b-estate__props__text">
+                    <h6>Метро</h6>
+                    <div>Проспект-Вернадского</div>
+                  </div>
+                </div>
+                <div class="b-estate__props-item">
+                  <div style="background-image: url( '/upload/icons/estate-props.gif' );" class="b-estate__props__icon"></div>
+                  <div class="b-estate__props__text">
+                    <h6>Цена</h6>
+                    <div>22 000 490 Р </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
               <!-- start /components/catalog.gallery/-->
               <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css" rel="stylesheet">
               <link rel="stylesheet" href="/components/catalog.gallery/style.css">
@@ -202,8 +275,7 @@
               <!-- end /components/catalog.gallery/-->
               <hr>
               <div id="estateAbout" class="b-estate-about">
-                <h1>Квартиры в I'M квартал</h1>
-                <div class="b-row b-estate__props">
+                <div class="b-row b-group__props">
                   <div class="b-col-sm-4"><img src="/upload/estate-prop/1.png" width="100" height="100" alt="">
                     <h5 itemprop="amenityFeature">Собственный сад в голландском стиле Hyco Verhaagen.</h5>
                   </div>
@@ -364,6 +436,7 @@
             <div class="b-form-message">Ваша заявка отправлена. В ближайшее время с Вами свяжется наш представитель.</div>
           </div>
           <!-- end /components/contact.form/-->
+          <div id="b-float-phone"><a href="" class="b-float-phone__content">Мы используем файлы cookies, чтобы сделать наш веб-сайт максимально интересным для Вас. Используя данный сайт<br>Вы даете согласие на использование файлом cookies на данном сайте.</a><span class="b-icon-close"></span></div>
           <footer itemscope itemtype="http://schema.org/LocalBusiness" class="b-footer">
             <nav class="b-footer-nav"><a href="">NEVA TOWERS</a><a href="">I'M</a><a href="">A-RESIDENCE</a><a href="">МИЛЛЕНИУМ ПАРК</a><a href="">ROZA ROSSA</a><a href="">НАШ АДРЕС</a><a href="">O КОМПАНИИ</a></nav>
             <hr class="i-line">

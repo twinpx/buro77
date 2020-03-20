@@ -1,20 +1,108 @@
 ﻿@import '../../styl/component-include.styl'
 
+#elSmallMap
+  position fixed !important
+  top 82px
+  right 0
+  width calc(100vw - 127px - 1024px)
+  height calc(100vh - 82px)
+  overflow hidden
+  z-index 10
+  
+  @media( max-width 1300px )
+    display none
+    
+  .b-catalog-list-small.i-map  &
+    position relative !important
+    top auto
+    right auto
+    width auto
+    height 580px
+  
+    @media( max-width 1300px )
+      display block
+  
+#infoWindow
+  position absolute
+  z-index 1000
+  
+  @media( max-width 1300px )
+    display none
+
+.b-infowindow
+  
+  img
+    float left
+    width 90px
+
+  &__text
+    height 90px
+    float left
+    width 157px
+    background #000
+    color #fff
+    padding 15px
+    box-sizing border-box
+    font-size 8pt
+
 .b-el-small
   position absolute
-  top 0
+  top 82px
   left 0
-  width 220px
+  width calc( 100vw - 127px - 1024px )
   height 100%
   overflow auto
   background-color $middle-grey
-
-  @media ( max-width 980px )
-    display none
+  display none
+  
+  &__map-heading
+    position relative
+    
+    h3
+      position absolute
+      top 30px
+      left 53px
+      margin 0
+      z-index 100
+    
+  &__menu
+    height 82px
+    background-color #000
+    padding 24px 48px
+    box-sizing border-box
+    position fixed
+    top 0
+    right 0
+    width calc(100vw - 127px - 1024px)
+    z-index 110
+  
+    @media( max-width 1300px )
+      display none 
+    
+    a
+      font-size 8pt
+      font-weight 400
+      text-transform uppercase
+      color #fff
+      margin-right 50px
+      
+      &.i-active
+        color #474747
+        font-weight 700
+        
+      @media( max-width 1410px )
+        
+        &:first-child
+          margin-right 0
+          
+        &:nth-child(2)
+          display none 
   
   &__wrapper
-    width 220px
     background embedurl("img/bg.gif") repeat-y 0 0
+
+    @media ( max-width 1300px )
+      display none
   
   &__i
     position relative
@@ -22,26 +110,33 @@
     line-height 1.3
     display block
     overflow hidden
+    width 100%//220px
+    float left
     
     &:hover,
     &:active,
     &:focus
       color #fff
     
-    
     &:nth-child( even )
       background-color #171717
       background-image url(/template/images/preloader-small-17.gif)
-    
+            
+    @media ( min-width 1431px )
+      width 50%
+      
+    @media ( min-width 1601px )
+      width 33.33%
+      
+    @media ( min-width 1801px )
+      width 25%
     
     &__small-img
       display none
     
-    
     @media ( max-width $breakpoint-tablet )
       float left
       width 20%
-    
     
     &__img
       position absolute
@@ -59,8 +154,6 @@
         display block
         opacity(0)
         transition( opacity 0.5s ease )
-      
-    
     
     &__shutter
       position absolute
@@ -74,11 +167,9 @@
       transition( opacity 0.5s ease )
       z-index 9
     
-    
     &.i-loaded &__img-bw,
     &.i-loaded &__shutter
       opacity(1)
-    
     
     /*&:first-child
       cursor default
@@ -87,21 +178,17 @@
       .b-el-small__i__props
         display none
       
-      
       .b-el-small__i__img
         opacity(1)
         position static
         vertical-align top
       
-      
       .b-el-small__i__shutter
         background embedurl("img/first-arrow.png") no-repeat center center
     */
     
-    
     &:hover &__img
       opacity(1)
-    
     
     &__props
       display block

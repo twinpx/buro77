@@ -1,0 +1,21 @@
+﻿// start /components/catalog.list.small/
+
+link( rel="stylesheet", href="/components/catalog.list.small/style.css" )
+script( src="/components/catalog.list.small/script.js" )
+ 
+.b-catalog-list-small.i-map 
+  .b-el-small__map-heading
+    h3 Объекты на карте
+    
+  script
+    | window.listSmallMapLat = 55;
+    | window.listSmallMapLng = 37;
+    | window.listSmallMapZoom = 12;
+    
+  #elSmallMap( data-ajax-url="/components/catalog.list.small/markers-no-current.json" data-ajax-method="GET" )
+  #infoWindow
+  
+script( src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js" )
+//-script( src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIBtmSOttEUoOM-fuV3gEtf_kGoZhm-YE&callback=initMap" async defer )
+
+// end /components/catalog.list.small/

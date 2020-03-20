@@ -1,0 +1,54 @@
+﻿{
+  "current": {
+    "position": {
+      "lat": 55.7034535,
+      "lng": 37.5505397
+    },
+    "image": "/upload/gmaps-ill.jpg",
+    "title": "A-Residence",
+    "text": "от 17 000 000 Р",
+    "href": "/estate/"
+  },
+  "markers": [
+    {
+      "position": {
+        "lat": 55.696382,
+        "lng": 37.544356
+      },
+      "image": "/upload/gmaps-ill.jpg",
+      "title": "A-Residence",
+      "text": "от 17 000 000 Р",
+      "href": "/estate/"
+    },
+    {
+      "position": {
+        "lat": 55.6919136,
+        "lng": 37.5276619
+      },
+      "image": "/upload/gmaps-ill.jpg",
+      "title": "A-R",
+      "text": "от 18 000 000 Р",
+      "href": "/estate/"
+    },
+    {
+      "position": {
+        "lat": 55.694526,
+        "lng": 37.540205
+      },
+      "image": "/upload/gmaps-ill.jpg",
+      "title": "A-Re",
+      "text": "от 17 Р",
+      "href": "/estate/"
+    },
+    {
+      "position": {
+        "lat": 55.689776,
+        "lng": 37.527113
+      },
+      "image": "/upload/gmaps-ill.jpg",
+      "title": "A-Rty",
+      "text": "от 18 Р",
+      "href": "/estate/"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ html( lang="ru" )
   body
     //-include includes/bx-panel.jade
     include ../modules/slide-panel/include.jade
+    include ../modules/right-slide-panel/include.jade
     section.b-page-container
       .b-grid-e
         .b-block-a.i-reverse
@@ -20,4 +21,6 @@ html( lang="ru" )
           block content
             .b-content
               h1 Main template
+              
+          include ../modules/float-phone/include.jade
           include includes/footer

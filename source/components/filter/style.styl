@@ -1,0 +1,258 @@
+@import '../../styl/component-include.styl'
+
+.b-filter
+
+  &-icons
+    position relative
+    
+    @media ( max-width $breakpoint-mobile )
+      padding-bottom 30px
+      
+  &__icon
+    width 16px
+    height 16px
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    position absolute
+    top 4px
+    left 0
+    z-index 14
+    
+    @media ( max-width $breakpoint-mobile )
+      top 0
+    
+  &__sort-icon
+    width 16px
+    height 16px
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    position absolute
+    top 3px
+    right 0
+    z-index 14
+    
+    @media ( max-width $breakpoint-mobile )
+      top 0
+
+  &__menu
+    border-bottom 1px solid #e2e2e2
+    padding-bottom 16px
+    position relative
+    
+    &-item
+      display inline-block
+      vertical-align top
+      text-decoration underline
+      font-size 9pt
+      margin-right 30px
+      cursor pointer
+      
+      @media ( max-width $breakpoint-mobile )
+        display block
+        border-bottom 1px solid #e2e2e2
+        padding 20px 30px
+        margin-right 0
+        text-decoration none
+        
+        &:first-of-type
+          border-top 1px solid #e2e2e2
+        
+        &:last-of-type
+          border-bottom none
+          padding-bottom 4px
+          
+    &-body
+      display inline-block
+      margin-left 45px
+      
+      @media ( max-width $breakpoint-mobile )
+        display none
+        margin 0
+      
+  &__sort
+    float right
+    margin-right 35px
+    font-size 9pt
+    
+    .hidden-xs,
+    .b-dropdown-text
+      font-size 9pt
+      cursor pointer
+      display inline-block
+      vertical-align top
+      
+    @media ( max-width 1100px ) and ( min-width 576px )
+      position absolute
+      top 0
+      right 0
+      float none
+      margin 0
+      z-index 15
+      
+      .hidden-xs
+        display none
+        
+      .b-dropdown-text
+        opacity 0
+        
+      .b-dropdown
+        left auto
+        right 0
+      
+    @media ( max-width $breakpoint-mobile )
+      display none
+      float none
+      margin 0
+      
+      &-item
+        padding 20px 30px 4px 
+        border-top 1px solid #e2e2e2
+
+  .b-row
+    margin-right -11px
+    margin-left -11px
+    
+  .b-col-xs-1, .b-col-sm-1, .b-col-md-1, .b-col-lg-1, .b-col-xs-2, .b-col-sm-2, .b-col-md-2, .b-col-lg-2, .b-col-xs-3, .b-col-sm-3, .b-col-md-3, .b-col-lg-3, .b-col-xs-4, .b-col-sm-4, .b-col-md-4, .b-col-lg-4, .b-col-xs-5, .b-col-sm-5, .b-col-md-5, .b-col-lg-5, .b-col-xs-6, .b-col-sm-6, .b-col-md-6, .b-col-lg-6, .b-col-xs-7, .b-col-sm-7, .b-col-md-7, .b-col-lg-7, .b-col-xs-8, .b-col-sm-8, .b-col-md-8, .b-col-lg-8, .b-col-xs-9, .b-col-sm-9, .b-col-md-9, .b-col-lg-9, .b-col-xs-10, .b-col-sm-10, .b-col-md-10, .b-col-lg-10, .b-col-xs-11, .b-col-sm-11, .b-col-md-11, .b-col-lg-11, .b-col-xs-12, .b-col-sm-12, .b-col-md-12, .b-col-lg-12
+    padding-right 11px
+    padding-left 11px
+    
+  &__result
+    transition( opacity 0.3s ease )
+    
+    &.i-hidden
+      opacity 0
+    
+  &__preloader
+    margin 50px auto 0
+    display none
+    
+    .i-preloader &
+      display block
+    
+.b-dropdown
+  display inline-block
+  position absolute
+  top 28px
+  left 0
+  background-color #fff
+  min-width 130px
+  padding 14px 0
+  display none
+  box-shadow 0 10px 20px rgba(0,0,0,.07)
+  z-index 10
+      
+  @media ( max-width $breakpoint-mobile )
+    display block
+    position static
+    top auto
+    left auto
+    background-color transparent
+    padding 0
+    box-shadow none
+  
+  &-button
+    position relative
+    
+  &-text
+    margin 0 !important
+      
+    /*@media ( max-width $breakpoint-mobile )
+      display none*/
+  
+  a,
+  label
+    display block
+    padding 2px 19px
+    white-space nowrap
+    position relative
+    
+    &:hover
+      background-color #f5f5f5
+      color #000
+      
+    @media ( max-width $breakpoint-mobile )
+      text-decoration none
+      padding-left 30px
+    
+      &:hover
+        background-color transparent
+        color #000
+    
+      &:before
+        content ''
+        display block
+        width 13px
+        height 13px
+        border 1px solid #000
+        position absolute
+        top 6px
+        left 0
+        z-index 11
+    
+      &:after
+        content ''
+        display none
+        width 9px
+        height 9px
+        background-color #000
+        position absolute
+        top 9px
+        left 3px
+        z-index 12
+      
+  input
+    display none
+      
+  &.i-range
+    width 250px
+    padding 18px 18px 42px
+    box-sizing border-box
+    
+    @media ( max-width $breakpoint-mobile )
+      width auto
+      padding 0 0 20px  
+    
+  @media ( max-width $breakpoint-mobile )
+    [type="radio"]:checked+label:after
+      display block
+    
+#stageRangeText
+  margin-bottom 25px
+  padding-left 2px
+  
+.ui-slider
+
+  &-horizontal
+    height 5px
+    
+    .ui-slider-handle
+      top -8px
+      margin-left -10px
+  
+  &.ui-corner-all
+    border-radius 3px
+    
+  &.ui-widget-content
+    background-color #e3e3e3
+    border none
+    
+  &-range.ui-widget-header
+    background-color #333333
+    
+  .ui-slider-handle
+    width 20px
+    height 20px
+    
+    &:focus
+      outline none
+    
+    &.ui-corner-all
+      border-radius 50%
+    
+.ui-widget-content .ui-state-default.ui-slider-handle
+  border none
+  background-color #333
+  
+    

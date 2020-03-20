@@ -22,5 +22,6 @@
             e.preventDefault();
             return false;
         });
+        $(".b-estate__props").addClass("i-animate");
     });
 })(jQuery);

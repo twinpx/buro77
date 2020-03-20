@@ -1,0 +1,46 @@
+@import '../../styl/component-include.styl'
+
+.b-call-block
+  position relative
+  border 1px solid #dbdbdb
+  padding 64px 50% 64px 64px
+  
+  @media( max-width 800px ) and ( min-width 651px )
+    padding-right 30%
+    
+    &__text 
+      font-size 14px
+    
+    img
+      width 50%
+  
+  @media( min-width 651px )
+    background none !important
+  
+  @media( max-width 650px )
+    background-position center bottom
+    background-repeat no-repeat
+    background-size 62%
+    padding 64px
+    
+    a.b-button.i-theme-d
+      padding 0
+      width 100%
+  
+  &__text
+    font-size 18pt
+    font-weight 400
+    line-height 1.7
+    margin-bottom 70px
+    
+    @media( max-width 650px )
+      font-size 12pt
+      margin-bottom 130px
+  
+  img
+    position absolute
+    bottom 0
+    right 0
+    
+    @media( max-width 650px )
+      display none

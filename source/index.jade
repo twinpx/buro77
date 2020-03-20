@@ -1,9 +1,45 @@
-﻿extends ./layouts/main.jade
-
-block title
-  title Main page | Buro77
-
-block content
-  include ./components/catalog.list/template
-  hr
-  include ./components/contact.form/template
+doctype html
+html( lang="ru" )
+  head
+    block title
+      title Buro77
+      
+    include ./layouts/includes/meta.jade
+    include ./layouts/includes/styles.jade
+    include ./layouts/includes/scripts.jade
+    
+  body
+    include ./modules/slide-panel/include.jade
+    
+    section.b-page-container
+    
+      include ./layouts/includes/header.jade
+    
+      block content
+      
+        div( style="margin: 50px 200px;" )
+          
+            h1 Main page
+            ul
+              li
+                a( href="/main/" ) Главная
+              li
+                a( href="/contacts/" ) Контакты
+              li
+                a( href="/estate/" ) Квартира
+              li
+                a( href="/estates/" ) Карточки квартир + блок с текстом и картинками
+              li
+                a( href="/favorites/" ) Избранное
+              li
+                a( href="/filter/" ) Фильтр
+              li
+                a( href="/filter2/" ) Фильтр 2
+              li
+                a( href="/group/" ) Жилой комплекс
+              li
+                a( href="/inner/" ) Текст
+              li
+                a( href="/loading/" ) Landing
+              li
+                a( href="/presentation/" ) Презентация

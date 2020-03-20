@@ -2,6 +2,49 @@
 
 $breakpoint = 400px
 
+
+  
+.b-group__props
+  line-height $line-height-sm
+  margin-right: 0;
+  margin-left: 0;
+  
+  @media( min-width $breakpoint )
+    background embedurl( 'img/prop-border.gif' ) repeat-y 0 0
+    font-size $font-size-bs
+
+  .b-col-sm-4
+    display flex
+    justify-content flex-start
+    align-items center
+    padding 0 15px 0 0
+    overflow hidden
+    text-overflow ellipsis
+    background embedurl( 'img/prop-border.gif' ) repeat-y right 0 #fff
+    border-bottom 1px solid #ececec
+    height 100px
+    
+    &:nth-child( 3n )
+      background-image none
+  
+    @media( max-width 1199px )
+      width 50%
+      border-bottom 1px solid #ececec
+    
+      &:nth-child( 3n )
+        background embedurl( 'img/prop-border.gif' ) repeat-y right 0 #fff
+    
+      &:nth-child( 2n )
+        background-image none
+    
+    @media( max-width 767px )
+      border-bottom 1px solid #ececec
+      width auto
+  
+  h5
+    margin 10px 0 10px 10px
+    font-size 9pt
+
 .b-estate
   margin-top -20px
 
@@ -17,47 +60,68 @@ $breakpoint = 400px
     
     .b-favorite-icon
       float right
-  
+      
   &__props
-    line-height $line-height-sm
-    margin-right: 0;
-    margin-left: 0;
-    
-    @media( min-width $breakpoint )
-      background embedurl( 'img/prop-border.gif' ) repeat-y 0 0
-      font-size $font-size-bs
+    line-height 1.4
+    overflow hidden
   
-    .b-col-sm-4
-      display flex
-      justify-content flex-start
-      align-items center
-      padding 0 15px 0 0
+    &-item
+      float left
       overflow hidden
-      text-overflow ellipsis
-      background embedurl( 'img/prop-border.gif' ) repeat-y right 0 #fff
-      border-bottom 1px solid #ececec
-      height 100px
+      margin 3px 7% 17px 0
+      opacity 0
+      transition( opacity 0.5s ease )
       
-      &:nth-child( 3n )
-        background-image none
-    
-      @media( max-width 1199px )
-        width 50%
-        border-bottom 1px solid #ececec
+      .i-animate &
+        opacity 1
+        
+        &:nth-child(1)
+          transition-delay .1s
+        
+        &:nth-child(2)
+          transition-delay .2s
+        
+        &:nth-child(3)
+          transition-delay .3s
+        
+        &:nth-child(4)
+          transition-delay .4s
+        
+        &:nth-child(5)
+          transition-delay .5s
+        
+        &:nth-child(6)
+          transition-delay .6s
+        
+        &:nth-child(7)
+          transition-delay .7s
+        
+        &:nth-child(8)
+          transition-delay .8s
+        
+        &:nth-child(9)
+          transition-delay .9s
+        
+        &:nth-child(10)
+          transition-delay 1s
       
-        &:nth-child( 3n )
-          background embedurl( 'img/prop-border.gif' ) repeat-y right 0 #fff
+    &__icon
+      width 16px
+      height 16px
+      background-repeat no-repeat
+      background-position center
+      background-size cover
+      float left
+      margin-top 1px
+      margin-right 12px
       
-        &:nth-child( 2n )
-          background-image none
+    &__text
+      float left
+      font-size 10.5pt
       
-      @media( max-width 767px )
-        border-bottom 1px solid #ececec
-        width auto
-    
-    h5
-      margin 10px 0 10px 10px
-      font-size 9pt
+      h6
+        margin 0
+        font-size 7pt
   
   &__plan
   

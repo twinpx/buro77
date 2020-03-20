@@ -1,0 +1,160 @@
+
+<!-- start /components/filter/-->
+<link rel="stylesheet" href="/components/filter/style.css"/>
+<script src="/components/filter/script.js"></script>
+<div class="b-filter">
+  <h1>Цены на апартаменты Большая Дмитровка 9</h1>
+  <div class="b-filter__menu">
+    <form action="/components/filter/result.json" method="GET">
+      <div class="b-filter-icons">
+        <div style="background-image: url( '/template/images/icons/filter.svg' );" class="b-filter__icon"></div>
+        <div style="background-image: url( '/template/images/icons/sorting.svg' );" class="b-filter__sort-icon"></div>
+      </div>
+      <div class="b-filter__menu-body">
+        <input type="hidden" name="ELEMENT" value="553"/><span class="b-filter__menu-item b-dropdown-button"><span class="b-dropdown-text">Аренда</span><span class="b-dropdown"><span>
+              <input id="type1" type="radio" value="1" name="TYPE" checked="checked"/>
+              <label for="type1">Аренда</label></span><span>
+              <input id="type2" type="radio" value="2" name="TYPE"/>
+              <label for="type2">Продажа</label></span><span>
+              <input id="type3" type="radio" value="3" name="TYPE"/>
+              <label for="type3">Все</label></span></span></span><span class="b-filter__menu-item b-dropdown-button"><span class="b-dropdown-text">3 этаж</span>
+          <input type="hidden" name="MIN_STAGE" value="3"/>
+          <input type="hidden" name="MAX_STAGE" value="8"/><span class="b-dropdown i-range">
+            <div id="stageRangeText"></div>
+            <div id="stageRangeSlider" data-min="1" data-max="20"></div></span></span><span class="b-filter__menu-item b-dropdown-button"><span class="hidden-xs">Комнат: </span><span class="b-dropdown-text">Не важно</span><span class="b-dropdown"><span>
+              <input id="type4" type="radio" value="1" name="ROOMS" checked="checked"/>
+              <label for="type4">1-комнатная</label></span><span>
+              <input id="type5" type="radio" value="2" name="ROOMS"/>
+              <label for="type5">2-комнатная</label></span><span>
+              <input id="type6" type="radio" value="3" name="ROOMS"/>
+              <label for="type6">3-комнатная</label></span><span>
+              <input id="type7" type="radio" value="4" name="ROOMS"/>
+              <label for="type7">Не важно</label></span></span></span><span class="b-filter__menu-item b-dropdown-button"><span class="hidden-xs">Спален: </span><span class="b-dropdown-text">Не важно</span><span class="b-dropdown"><span>
+              <input id="type8" type="radio" value="1" name="BEDROOMS" checked="checked"/>
+              <label for="type8">1 спальня</label></span><span>
+              <input id="type9" type="radio" value="2" name="BEDROOMS"/>
+              <label for="type9">2 спальни</label></span><span>
+              <input id="type10" type="radio" value="3" name="BEDROOMS"/>
+              <label for="type10">3 спальни</label></span><span>
+              <input id="type11" type="radio" value="4" name="BEDROOMS"/>
+              <label for="type11">Не важно</label></span></span></span>
+      </div>
+      <div class="b-filter__sort">
+        <div class="b-filter__sort-item b-dropdown-button"><span class="hidden-xs">Сортировать&nbsp;</span><span class="b-dropdown-text">по цене</span><span class="b-dropdown"><span>
+              <input id="type12" type="radio" value="lot" name="SORT" checked="checked"/>
+              <label for="type12">по лотам</label></span><span>
+              <input id="type13" type="radio" value="square" name="SORT"/>
+              <label for="type13">по площади</label></span><span>
+              <input id="type14" type="radio" value="price" name="SORT"/>
+              <label for="type14">по цене</label></span></span></div>
+      </div>
+    </form>
+  </div>
+  <hr/><img src="/template/images/preloader-ec.gif" width="32" height="32" alt="" class="b-filter__preloader"/>
+  <div class="b-filter__result">
+    <div class="b-row">
+      <div class="b-col-sm-6">
+        <div class="b-price-block">
+          <div class="b-row">
+            <div class="b-col-sm-6"><a href="" data-original="/upload/price-block.jpg" class="b-price-block__img"></a></div>
+            <div class="b-col-sm-6">
+              <div class="b-price-block__text">
+                Аренда<br>
+                Апартаменты<br>
+                Лот: SA681<br>
+                Этаж: 2<br>
+                Площадь: 103,1 м<sup>2</sup><br>
+                Комнат: 3<br>
+                Спален: 2
+              </div>
+            </div>
+          </div>
+          <div class="b-price-block__bottom">
+            <div class="b-row">
+              <div class="b-col-xs-6 b-price-block__price">124 899 000 Р</div>
+              <div class="b-col-xs-6 b-price-block__more"><a href="">Подробнее</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="visible-xs-block"/>
+      <div class="b-col-sm-6">
+        <div class="b-price-block i-sold">
+          <div class="b-row">
+            <div class="b-col-sm-6"><a href="" data-original="/upload/price-block.jpg" class="b-price-block__img"><span>Продано</span></a></div>
+            <div class="b-col-sm-6">
+              <div class="b-price-block__text">
+                Аренда<br>
+                Апартаменты<br>
+                Лот: SA681<br>
+                Этаж: 2<br>
+                Площадь: 103,1 м<sup>2</sup><br>
+                Комнат: 3<br>
+                Спален: 2
+              </div>
+            </div>
+          </div>
+          <div class="b-price-block__bottom">
+            <div class="b-row">
+              <div class="b-col-xs-6 b-price-block__price">124 899 000 Р</div>
+              <div class="b-col-xs-6 b-price-block__more"><a href="">Подробнее</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <div class="b-row">
+      <div class="b-col-sm-6">
+        <div class="b-price-block">
+          <div class="b-row">
+            <div class="b-col-sm-6"><a href="" data-original="/upload/price-block.jpg" class="b-price-block__img"></a></div>
+            <div class="b-col-sm-6">
+              <div class="b-price-block__text">
+                Аренда<br>
+                Апартаменты<br>
+                Лот: SA681<br>
+                Этаж: 2<br>
+                Площадь: 103,1 м<sup>2</sup><br>
+                Комнат: 3<br>
+                Спален: 2
+              </div>
+            </div>
+          </div>
+          <div class="b-price-block__bottom">
+            <div class="b-row">
+              <div class="b-col-xs-6 b-price-block__price">124 899 000 Р</div>
+              <div class="b-col-xs-6 b-price-block__more"><a href="">Подробнее</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="visible-xs-block"/>
+      <div class="b-col-sm-6">
+        <div class="b-price-block i-sold">
+          <div class="b-row">
+            <div class="b-col-sm-6"><a href="" data-original="/upload/price-block.jpg" class="b-price-block__img"><span>Продано</span></a></div>
+            <div class="b-col-sm-6">
+              <div class="b-price-block__text">
+                Аренда<br>
+                Апартаменты<br>
+                Лот: SA681<br>
+                Этаж: 2<br>
+                Площадь: 103,1 м<sup>2</sup><br>
+                Комнат: 3<br>
+                Спален: 2
+              </div>
+            </div>
+          </div>
+          <div class="b-price-block__bottom">
+            <div class="b-row">
+              <div class="b-col-xs-6 b-price-block__price">124 899 000 Р</div>
+              <div class="b-col-xs-6 b-price-block__more"><a href="">Подробнее</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end /components/filter/-->

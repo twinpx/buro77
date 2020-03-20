@@ -1,0 +1,39 @@
+@import '../../styl/component-include.styl'
+
+#b-float-phone
+  position fixed
+  bottom -60px
+  left 0
+  width 100%
+  margin 0
+  padding 17px 70px 17px 20px
+  color #fff
+  font-size 8pt
+  line-height 13px
+  height 60px
+  transition( bottom 0.2s ease )
+  box-sizing border-box
+  background-color rgba(0,0,0,0.25)
+  z-index 997
+
+  &.i-visible
+    bottom 0
+    
+  @media( max-width $breakpoint-tablet )
+    min-height 60px
+    height auto
+    bottom -20%
+  
+  .b-icon-close
+    display block
+    width 16px
+    height 16px
+    background url("/template/images/icons/close-icon-white.svg") no-repeat center
+    background-size cover
+    position absolute
+    top 22px
+    right 32px
+    cursor pointer
+
+  .bx-touch &
+    display none

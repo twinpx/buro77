@@ -1,3 +1,50 @@
+.b-group__props {
+  line-height: 1.3;
+  margin-right: 0;
+  margin-left: 0;
+}
+@media (min-width: 400px) {
+  .b-group__props {
+    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAM3NzQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==") repeat-y 0 0;
+    font-size: 12pt;
+  }
+}
+.b-group__props .b-col-sm-4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAM3NzQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==") repeat-y right 0 #fff;
+  border-bottom: 1px solid #ececec;
+  height: 100px;
+}
+.b-group__props .b-col-sm-4:nth-child(3n ) {
+  background-image: none;
+}
+@media (max-width: 1199px) {
+  .b-group__props .b-col-sm-4 {
+    width: 50%;
+    border-bottom: 1px solid #ececec;
+  }
+  .b-group__props .b-col-sm-4:nth-child(3n ) {
+    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAM3NzQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==") repeat-y right 0 #fff;
+  }
+  .b-group__props .b-col-sm-4:nth-child(2n ) {
+    background-image: none;
+  }
+}
+@media (max-width: 767px) {
+  .b-group__props .b-col-sm-4 {
+    border-bottom: 1px solid #ececec;
+    width: auto;
+  }
+}
+.b-group__props h5 {
+  margin: 10px 0 10px 10px;
+  font-size: 9pt;
+}
 .b-estate {
   margin-top: -20px;
 }
@@ -15,51 +62,73 @@
   float: right;
 }
 .b-estate__props {
-  line-height: 1.3;
-  margin-right: 0;
-  margin-left: 0;
-}
-@media (min-width: 400px) {
-  .b-estate__props {
-    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAM3NzQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==") repeat-y 0 0;
-    font-size: 12pt;
-  }
-}
-.b-estate__props .b-col-sm-4 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 15px 0 0;
+  line-height: 1.4;
   overflow: hidden;
-  text-overflow: ellipsis;
-  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAM3NzQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==") repeat-y right 0 #fff;
-  border-bottom: 1px solid #ececec;
-  height: 100px;
 }
-.b-estate__props .b-col-sm-4:nth-child(3n ) {
-  background-image: none;
+.b-estate__props-item {
+  float: left;
+  overflow: hidden;
+  margin: 3px 7% 17px 0;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
 }
-@media (max-width: 1199px) {
-  .b-estate__props .b-col-sm-4 {
-    width: 50%;
-    border-bottom: 1px solid #ececec;
-  }
-  .b-estate__props .b-col-sm-4:nth-child(3n ) {
-    background: url("data:image/gif;base64,R0lGODlhAQABAIAAAM3NzQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==") repeat-y right 0 #fff;
-  }
-  .b-estate__props .b-col-sm-4:nth-child(2n ) {
-    background-image: none;
-  }
+.i-animate .b-estate__props-item {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
 }
-@media (max-width: 767px) {
-  .b-estate__props .b-col-sm-4 {
-    border-bottom: 1px solid #ececec;
-    width: auto;
-  }
+.i-animate .b-estate__props-item:nth-child(1) {
+  transition-delay: 0.1s;
 }
-.b-estate__props h5 {
-  margin: 10px 0 10px 10px;
-  font-size: 9pt;
+.i-animate .b-estate__props-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.i-animate .b-estate__props-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.i-animate .b-estate__props-item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.i-animate .b-estate__props-item:nth-child(5) {
+  transition-delay: 0.5s;
+}
+.i-animate .b-estate__props-item:nth-child(6) {
+  transition-delay: 0.6s;
+}
+.i-animate .b-estate__props-item:nth-child(7) {
+  transition-delay: 0.7s;
+}
+.i-animate .b-estate__props-item:nth-child(8) {
+  transition-delay: 0.8s;
+}
+.i-animate .b-estate__props-item:nth-child(9) {
+  transition-delay: 0.9s;
+}
+.i-animate .b-estate__props-item:nth-child(10) {
+  transition-delay: 1s;
+}
+.b-estate__props__icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+  margin-top: 1px;
+  margin-right: 12px;
+}
+.b-estate__props__text {
+  float: left;
+  font-size: 10.5pt;
+}
+.b-estate__props__text h6 {
+  margin: 0;
+  font-size: 7pt;
 }
 .b-estate__plan figure {
   background: #fff;
@@ -95,7 +164,7 @@
   height: 470px;
   overflow: hidden;
 }
-@media (max-width: 575px) {
+@media (max-width: 630px) {
   #estateMap {
     height: 300px;
   }

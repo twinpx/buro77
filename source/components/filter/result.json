@@ -1,0 +1,51 @@
+﻿<div class="b-row">
+                <div class="b-col-sm-6">
+                  <div class="b-price-block">
+                    <div class="b-row">
+                      <div class="b-col-sm-6"><a href="" data-original="/upload/price-block.jpg" class="b-price-block__img" style="display: block; background-image: url(&quot;/upload/price-block.jpg&quot;);"></a></div>
+                      <div class="b-col-sm-6">
+                        <div class="b-price-block__text">
+                          Аренда<br>
+                          Апартаменты<br>
+                          Лот: SA681<br>
+                          Этаж: 2<br>
+                          Площадь: 103,1 м<sup>2</sup><br>
+                          Комнат: 3<br>
+                          Спален: 2
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-price-block__bottom">
+                      <div class="b-row">
+                        <div class="b-col-xs-6 b-price-block__price">124 899 000 Р</div>
+                        <div class="b-col-xs-6 b-price-block__more"><a href="">Подробнее</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="visible-xs-block">
+                <div class="b-col-sm-6">
+                  <div class="b-price-block i-sold">
+                    <div class="b-row">
+                      <div class="b-col-sm-6"><a href="" data-original="/upload/price-block.jpg" class="b-price-block__img" style="display: block; background-image: url(&quot;/upload/price-block.jpg&quot;);"><span>Продано</span></a></div>
+                      <div class="b-col-sm-6">
+                        <div class="b-price-block__text">
+                          Аренда<br>
+                          Апартаменты<br>
+                          Лот: SA681<br>
+                          Этаж: 2<br>
+                          Площадь: 103,1 м<sup>2</sup><br>
+                          Комнат: 3<br>
+                          Спален: 2
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-price-block__bottom">
+                      <div class="b-row">
+                        <div class="b-col-xs-6 b-price-block__price">124 899 000 Р</div>
+                        <div class="b-col-xs-6 b-price-block__more"><a href="">Подробнее</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>

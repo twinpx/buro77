@@ -1,14 +1,11 @@
 ﻿body
-  background embedurl("img/side-panel-bg.gif") repeat-y 0 0 #383838
+  background #383838
   color #ccc
   font-family $font
   line-height $line-height-lg
   font-weight 100
   font-size $font-size-bs
-  
-  @media (min-width: 540px)
-    background-image none
-    
+      
 img
   vertical-align top
     
@@ -38,8 +35,13 @@ h1
   
   @media( max-width $breakpoint-mobile )
     font-size 18pt
+    
+.b-h1-sub
+  font-size 17pt
+  color #999
   
-h2
+h2,
+.b-h2
   font-size 18pt
   line-height $line-height-sm
   margin 40px 0 20px
@@ -50,12 +52,19 @@ h2
 h5
   font-size $font-size-sm
   color #666666
+  
+h6
+  font-size 9pt
+  text-transform uppercase
 
 hr
   margin 20px 0
   padding 0
   border 0
   height 1px
+  
+  &.i-size-L
+    margin 40px 0
   
   &.i-size-S
     margin 10px 0
@@ -79,6 +88,8 @@ ul
   padding 20px 50px 55px
   background-color $content-bg
   color $text-color
+  max-width 1024px
+  box-sizing border-box
   
   @media( max-width $breakpoint-mobile )
     padding 20px
@@ -92,9 +103,20 @@ ul
       opacity .7
       
 .b-page-content
-  padding 40px 50px
+  padding 50px
   color #fff
-  max-width 720px
+  max-width 1000px
+  font-size 10.5pt
+  
+  &.i-center
+    margin 0 auto
+  
+  :first-child
+    margin-top 0
+  
+  .b-content &
+    color #333
+    padding 0
   
   @media( max-width $breakpoint-mobile )
     padding 20px
@@ -123,7 +145,7 @@ ul
   .b-block-a
     
     @media( min-width $breakpoint-desktop )
-      width 220px
+      width calc( 100vw - 127px - 1024px )
       min-height 1px
       float left
       
@@ -138,10 +160,10 @@ ul
     
     @media( min-width $breakpoint-desktop )
       min-height 1px
-      padding-left 220px
+      padding-left calc( 100vw - 127px - 1024px )
       
       &.i-reverse
-        padding-right 220px
+        padding-right calc( 100vw - 127px - 1024px )
         padding-left 0
         
   &:after
@@ -310,7 +332,7 @@ ul
     vertical-align top
 
 .nicescroll-rails
-  z-index 20 !important
+  z-index 120 !important
 
 .row
 
@@ -323,3 +345,47 @@ ul
   
   @media ( max-width $breakpoint-mobile )
     display block !important
+    
+.b-ill-text-block
+  text-align center
+
+  img
+    max-width 100%
+    
+  &__text
+    
+    @media ( min-width 768px )
+      padding-top 70px
+    
+  hr.i-line
+    margin 30px 95px
+    
+  a
+    font-size 10.5pt
+      
+.b-content-clients
+  display flex
+  align-items center
+  flex-wrap wrap
+  margin-top 35px
+  
+  @media ( max-width $breakpoint-mobile )
+    justify-content center
+  
+  img
+    margin-right 50px
+    margin-bottom 20px
+  
+    @media ( max-width $breakpoint-mobile )
+      margin 0 25px 20px
+      
+.text-center
+  text-align center
+  
+.hidden-xs
+  @media( max-width 767px )
+    display none
+    
+.img-responsive
+  vertical-align top
+  max-width 100%

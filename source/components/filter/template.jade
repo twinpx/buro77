@@ -1,0 +1,121 @@
+﻿// start /components/filter/
+
+link( rel="stylesheet", href="/components/filter/style.css" )
+script( src="/components/filter/script.js" )
+
+.b-filter
+  h1 Цены на апартаменты Большая Дмитровка 9
+  
+  .b-filter__menu
+    
+    form( action="/components/filter/result.json" method="GET" )
+    
+      .b-filter-icons
+        .b-filter__icon( style="background-image: url( '/template/images/icons/filter.svg' );" )
+        .b-filter__sort-icon( style="background-image: url( '/template/images/icons/sorting.svg' );" )
+      
+      .b-filter__menu-body
+        input( type="hidden" name="ELEMENT" value="553" )
+        span.b-filter__menu-item.b-dropdown-button
+          span.b-dropdown-text Аренда
+          span.b-dropdown
+            span
+              input#type1( type="radio" value="1" name="TYPE" checked )
+              label( for="type1" ) Аренда
+            span
+              input#type2( type="radio" value="2" name="TYPE" )
+              label( for="type2" ) Продажа
+            span
+              input#type3( type="radio" value="3" name="TYPE" )
+              label( for="type3" ) Все
+            
+        span.b-filter__menu-item.b-dropdown-button
+          span.b-dropdown-text 3 этаж
+          input( type="hidden" name="MIN_STAGE" value="3" )
+          input( type="hidden" name="MAX_STAGE" value="8" )
+          span.b-dropdown.i-range
+            #stageRangeText
+            #stageRangeSlider( data-min="1" data-max="20" )
+            
+        span.b-filter__menu-item.b-dropdown-button
+          span.hidden-xs Комнат: 
+          span.b-dropdown-text Не важно
+          span.b-dropdown
+            span
+              input#type4( type="radio" value="1" name="ROOMS" checked )
+              label( for="type4" ) 1-комнатная
+            span
+              input#type5( type="radio" value="2" name="ROOMS" )
+              label( for="type5" ) 2-комнатная
+            span
+              input#type6( type="radio" value="3" name="ROOMS" )
+              label( for="type6" ) 3-комнатная
+            span
+              input#type7( type="radio" value="4" name="ROOMS" )
+              label( for="type7" ) Не важно
+          
+        span.b-filter__menu-item.b-dropdown-button
+          span.hidden-xs Спален: 
+          span.b-dropdown-text Не важно
+          span.b-dropdown
+            span
+              input#type8( type="radio" value="1" name="BEDROOMS" checked )
+              label( for="type8" ) 1 спальня
+            span
+              input#type9( type="radio" value="2" name="BEDROOMS" )
+              label( for="type9" ) 2 спальни
+            span
+              input#type10( type="radio" value="3" name="BEDROOMS" )
+              label( for="type10" ) 3 спальни
+            span
+              input#type11( type="radio" value="4" name="BEDROOMS" )
+              label( for="type11" ) Не важно
+      
+      .b-filter__sort
+        .b-filter__sort-item.b-dropdown-button
+          span.hidden-xs Сортировать&nbsp;
+          span.b-dropdown-text по цене
+          span.b-dropdown
+            span
+              input#type12( type="radio" value="lot" name="SORT" checked )
+              label( for="type12" ) по лотам
+            span
+              input#type13( type="radio" value="square" name="SORT" )
+              label( for="type13" ) по площади
+            span
+              input#type14( type="radio" value="price" name="SORT" )
+              label( for="type14" ) по цене
+        
+  hr
+  
+  img.b-filter__preloader( src="/template/images/preloader-ec.gif" width="32" height="32" alt="" )
+  
+  .b-filter__result
+  
+    .b-row
+    
+      .b-col-sm-6
+    
+        include ../../modules/price-block/include
+        
+      hr.visible-xs-block
+    
+      .b-col-sm-6
+    
+        include ../../modules/price-block/sold
+        
+    hr
+
+    .b-row
+    
+      .b-col-sm-6
+    
+        include ../../modules/price-block/include
+        
+      hr.visible-xs-block
+    
+      .b-col-sm-6
+    
+        include ../../modules/price-block/sold
+      
+// end /components/filter/

@@ -1,0 +1,1 @@
+$( '.b-price-block__img' ).lazyload();

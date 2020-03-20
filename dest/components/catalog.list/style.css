@@ -39,7 +39,7 @@
   width: 19.5%;
   text-align: center;
 }
-@media (max-width: 575px) {
+@media (max-width: 630px) {
   .b-estate-filter__menu1 li {
     width: 33%;
   }
@@ -106,7 +106,7 @@
   text-align: center;
   margin: 0 7px 5px;
 }
-@media (max-width: 575px) {
+@media (max-width: 630px) {
   .b-estate-filter__menu3 li {
     width: 33%;
   }

@@ -1,7 +1,5 @@
 function windowEvents() {
     $( window ).bind( "scroll", scrollWindow).scroll();
-    
-    $( 'html' ).niceScroll();
 
     function scrollWindow(e) {
       
@@ -65,3 +63,19 @@ $( window ).bind( 'scroll', function(e) {
 });
 
 windowEvents();
+
+//calculate scrollbar width
+function getScrollbarWidth() {
+  var div = document.createElement( 'div' );
+
+  div.style.overflowY = 'scroll';
+  div.style.width = '50px';
+  div.style.height = '50px';
+  div.style.visibility = 'hidden';
+
+  document.body.appendChild( div );
+  var scrollWidth = div.offsetWidth - div.clientWidth;
+  document.body.removeChild( div );
+  
+  return scrollWidth;
+}

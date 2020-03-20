@@ -3,7 +3,7 @@ function sideCss() {
     return;
   }
   
-  $( '.b-side-icons, .b-header__fixed' ).css({ top: $( '#bx-panel' ).height() + 'px' });
+  $( '.b-side-icons, .b-header__fixed, .b-el-small__menu' ).css({ top: $( '#bx-panel' ).height() + 'px' });
   $( '.b-side-bar__content' ).css({ paddingTop: $( '#bx-panel' ).height() + 'px' });
   
   if ( window.matchMedia( "(max-width: 575px)" ).matches ) {
@@ -14,7 +14,7 @@ function sideCss() {
   
   $( '#bx-panel-expander, #bx-panel-hider' ).bind( 'click', function () {
     setTimeout( function() {
-      $( '.b-side-icons, .b-header__fixed' ).css({ top: $( '#bx-panel' ).height() + 'px' });
+      $( '.b-side-icons, .b-header__fixed, .b-el-small__menu' ).css({ top: $( '#bx-panel' ).height() + 'px' });
       $( '.b-side-bar__content, .b-side-search__content' ).css({ paddingTop: $( '#bx-panel' ).height() + 'px' });
       sideSearchCSS();
     }, 0);
