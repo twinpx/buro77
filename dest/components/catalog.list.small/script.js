@@ -232,7 +232,7 @@
                             if (top < $("#elSmallMap").offset().top) {
                                 top = gaEvent.clientY + 40;
                             }
-                            $("#infoWindow").offset({
+                            $("#infoWindow").css({
                                 top: top,
                                 left: left
                             });
@@ -269,7 +269,7 @@
                             if (top < $("#elSmallMap").offset().top) {
                                 top = gaEvent.clientY + 40;
                             }
-                            $("#infoWindow").offset({
+                            $("#infoWindow").css({
                                 top: top,
                                 left: left
                             });
@@ -281,9 +281,11 @@
                             window.location.href = cur.href;
                         });
                     });
-                    var markerCluster = new MarkerClusterer(map, markers, {
-                        imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"
-                    });
+                    setTimeout(function() {
+                        var markerCluster = new MarkerClusterer(map, markers, {
+                            imagePath: "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m"
+                        });
+                    }, 2e3);
                 }
             },
             error: function(a, b, c) {

@@ -509,17 +509,12 @@ th {
   }
 }
 body {
-  background: url("data:image/gif;base64,R0lGODlhfwABAIAAADMzMwAAACH5BAAAAAAALAAAAAB/AAEAAAIKhI+py+0Po5yrAAA7") repeat-y 0 0 #383838;
+  background: #383838;
   color: #ccc;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, serif;
   line-height: 1.9;
   font-weight: 100;
   font-size: 12pt;
-}
-@media (min-width: 540px) {
-  body {
-    background-image: none;
-  }
 }
 img {
   vertical-align: top;
