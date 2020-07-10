@@ -509,17 +509,12 @@ th {
   }
 }
 body {
-  background: url("data:image/gif;base64,R0lGODlhfwABAIAAADMzMwAAACH5BAAAAAAALAAAAAB/AAEAAAIKhI+py+0Po5yrAAA7") repeat-y 0 0 #383838;
+  background: #383838;
   color: #ccc;
   font-family: "Montserrat", "Open Sans", Helvetica, Arial, serif;
   line-height: 1.9;
   font-weight: 100;
   font-size: 12pt;
-}
-@media (min-width: 540px) {
-  body {
-    background-image: none;
-  }
 }
 img {
   vertical-align: top;
@@ -1045,7 +1040,11 @@ a.b-estate-logo {
   display: block;
   margin: 0 40px 0 0;
   float: left;
-  max-width: calc(20% - 40px);
+  width: calc(25% - 80px);
+  height: 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 @media (max-width: 630px) {
   a.b-estate-logo {
@@ -1054,6 +1053,10 @@ a.b-estate-logo {
     width: auto !important;
     max-width: inherit;
   }
+}
+a.b-estate-logo img {
+  width: auto;
+  height: 42px;
 }
 @media (min-width: 631px) and (max-width: 831px) {
   a.b-estate-logo img {
@@ -2119,6 +2122,9 @@ a.b-price-block__img:hover {
     width: 100%;
     background-color: #333;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 .b-side-icons .b-favorites-link {
@@ -2235,10 +2241,11 @@ a.b-price-block__img:hover {
 @media (max-width: 630px) {
   .b-side-bar__button {
     width: 48px;
-    height: 45px;
+    height: 48px;
     display: inline-block;
-    margin: 6px 0 0;
-    background-size: 50%;
+    margin: 0;
+    background-size: 33%;
+    order: 1;
   }
 }
 .b-side-bar__search {
@@ -2252,10 +2259,11 @@ a.b-price-block__img:hover {
 @media (max-width: 630px) {
   .b-side-bar__search {
     width: 48px;
-    height: 45px;
+    height: 48px;
     display: inline-block;
-    margin: 6px 0 0;
-    background-size: 50%;
+    margin: 0;
+    background-size: 33%;
+    order: 3;
   }
 }
 .b-side-bar__top {
@@ -2518,7 +2526,8 @@ div.b-side__search__result__header {
 }
 @media (max-width: 630px) {
   .b-logo {
-    display: none;
+    display: inline-block;
+    order: 2;
   }
 }
 .b-logo__title {
@@ -2527,10 +2536,23 @@ div.b-side__search__result__header {
   padding: 15px 0 11px;
   text-align: center;
 }
+@media (max-width: 630px) {
+  .b-logo__title {
+    border: none;
+    padding: 0;
+    display: inline-block;
+  }
+}
 .b-logo__title img {
   display: inline-block;
   vertical-align: top;
   margin: 2px 0 5px;
+}
+@media (max-width: 630px) {
+  .b-logo__title img {
+    height: 35px !important;
+    margin: 10px 0 10px;
+  }
 }
 .b-logo__slogan {
   display: inline-block;

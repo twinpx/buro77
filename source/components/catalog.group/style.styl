@@ -1,8 +1,6 @@
 @import '../../styl/component-include.styl'
 
 $breakpoint = 400px
-
-
   
 .b-group__props
   line-height $line-height-sm
@@ -47,6 +45,10 @@ $breakpoint = 400px
 
 .b-estate
   margin-top -20px
+  
+  @media ( max-width $breakpoint-mobile)
+    h1
+      text-align center
 
   &__bar
     margin-bottom 23px

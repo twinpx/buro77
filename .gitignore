@@ -1,4 +1,4 @@
-.idea
+dest
+markup
 node_modules
-*.sublime-workspace
-*.sublime-project
+.gitignore

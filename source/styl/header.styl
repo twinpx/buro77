@@ -79,7 +79,11 @@ a.b-estate-logo
   display block
   margin 0 40px 0 0
   float left
-  max-width calc( 20% - 40px )
+  width calc(25% - 80px)
+  height 42px
+  background-repeat no-repeat
+  background-position center
+  background-size contain
     
   @media ( max-width $breakpoint-mobile )
     margin 0 0 20px
@@ -88,6 +92,8 @@ a.b-estate-logo
     max-width inherit
     
   img
+    width auto
+    height 42px
   
     @media ( min-width $breakpoint-mobile+1 ) and ( max-width 831px )
       max-width 100px !important

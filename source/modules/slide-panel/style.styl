@@ -18,6 +18,9 @@
       width 100%
       background-color #333
       text-align center
+      display flex
+      align-items center
+      justify-content space-between
     
     .b-favorites-link
       margin-left 45px
@@ -91,10 +94,11 @@
     
       @media ( max-width $breakpoint-mobile )
         width 48px
-        height 45px
+        height 48px
         display inline-block
-        margin 6px 0 0
-        background-size 50%
+        margin 0
+        background-size 33%
+        order 1
     
     &__search
       display block
@@ -106,10 +110,11 @@
     
       @media ( max-width $breakpoint-mobile )
         width 48px
-        height 45px
+        height 48px
         display inline-block
-        margin 6px 0 0
-        background-size 50%
+        margin 0
+        background-size 33%
+        order 3
     
     &__top
       display block
@@ -353,17 +358,27 @@
 .b-logo
         
   @media ( max-width $breakpoint-mobile )
-    display none
+    display inline-block
+    order 2
   
   &__title
     display block
     border-bottom 1px solid rgba( 255,255,255,0.1 )
     padding 15px 0 11px
     text-align center
+    
+    @media ( max-width $breakpoint-mobile )
+      border none
+      padding 0
+      display inline-block
   
     img
       ib()
       margin 2px 0 5px
+      
+      @media ( max-width $breakpoint-mobile )
+        height 35px !important
+        margin 10px 0 10px
     
   &__slogan
     ib()
