@@ -1,4 +1,4 @@
-dest
-markup
-node_modules
+/dest/
+/markup/
+/node_modules/
 .gitignore
