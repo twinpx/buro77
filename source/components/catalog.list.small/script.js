@@ -335,10 +335,10 @@
                 }
                 
                 if ( top < $( '#elSmallMap' ).offset().top ) {
-                  top = gaEvent.clientY + 40;
+                  top = gaEvent.clientY + (window.pageYOffset || document.documentElement.scrollTop) + 40;
                 }
                 
-                $( '#infoWindow' ).offset({ top: top, left: left });
+                $( '#infoWindow' ).css({ top: top, left: left });
               });
               
               marker1.addListener('mouseout', function() {
@@ -382,10 +382,10 @@
                 }
                 
                 if ( top < $( '#elSmallMap' ).offset().top ) {
-                  top = gaEvent.clientY + 40;
+                  top = gaEvent.clientY + (window.pageYOffset || document.documentElement.scrollTop) + 40;
                 }
                 
-                $( '#infoWindow' ).offset({ top: top, left: left });
+                $( '#infoWindow' ).css({ top: top, left: left });
               });
               
               markers[ index ].addListener('mouseout', function() {
@@ -398,11 +398,13 @@
               
             });
             
-            var markerCluster = new MarkerClusterer( map, markers,
-              {
-                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-              }
-            );
+            setTimeout( function() {
+              var markerCluster = new MarkerClusterer( map, markers,
+                {
+                  imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+                }
+              );
+            }, 2000);
           }
         },
         error: function(a, b, c) {

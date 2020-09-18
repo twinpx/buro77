@@ -1388,7 +1388,9 @@
         this.scrollvaluemax = 0;
         this.isrtlmode = "auto" == this.opt.rtlmode ? "rtl" == (this.win[0] == window ? this.body : this.win).css("direction") : !0 === this.opt.rtlmode;
         this.observerbody = this.observerremover = this.observer = this.scrollmom = this.scrollrunning = !1;
-        do this.id = "ascrail" + P++; while (document.getElementById(this.id));
+        do {
+            this.id = "ascrail" + P++;
+        } while (document.getElementById(this.id));
         this.hasmousefocus = this.hasfocus = this.zoomactive = this.zoom = this.selectiondrag = this.cursorfreezed = this.cursor = this.rail = !1;
         this.visibility = !0;
         this.hidden = this.locked = this.railslocked = !1;
@@ -1654,7 +1656,7 @@
                 c.css({
                     position: "relative",
                     top: 0,
-                    "float": "right",
+                    float: "right",
                     width: a.opt.cursorwidth,
                     height: "0px",
                     "background-color": a.opt.cursorcolor,
