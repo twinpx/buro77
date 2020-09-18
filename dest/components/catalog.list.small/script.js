@@ -230,7 +230,7 @@
                                 left = docWidth - 250;
                             }
                             if (top < $("#elSmallMap").offset().top) {
-                                top = gaEvent.clientY + 40;
+                                top = gaEvent.clientY + (window.pageYOffset || document.documentElement.scrollTop) + 40;
                             }
                             $("#infoWindow").css({
                                 top: top,
@@ -267,7 +267,7 @@
                                 left = docWidth - 250;
                             }
                             if (top < $("#elSmallMap").offset().top) {
-                                top = gaEvent.clientY + 40;
+                                top = gaEvent.clientY + (window.pageYOffset || document.documentElement.scrollTop) + 40;
                             }
                             $("#infoWindow").css({
                                 top: top,

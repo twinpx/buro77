@@ -2,7 +2,9 @@
   });
   
   $( window ).load( function(e) {
-    $( 'html' ).niceScroll();
+    if ( !( "ontouchstart" in document.documentElement )) {
+      $( 'html' ).niceScroll();
+    }
   });
 
 }( jQuery ));
